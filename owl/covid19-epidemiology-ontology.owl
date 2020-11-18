@@ -85,9 +85,177 @@
     
 
 
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#attack_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#average_rate_of_infectious_contacts -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_rate_of_infectious_contacts">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#birth_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate -->
 
     <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#cluster_size -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cluster_size">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#confirmed_cases -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#confirmed_cases">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#critical_vaccination_coverage -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#critical_vaccination_coverage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#cumulative_case_rates -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_case_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#cumulative_cases -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_cases">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#cumulative_death_rates -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_death_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#cumulative_excess_mortality -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_excess_mortality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#daily_deaths -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#daily_deaths">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#device-specific_rates_and_procedure-specific_rates -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#device-specific_rates_and_procedure-specific_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#diagnostic_specificity -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#diagnostic_specificity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#exposed_contacts -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#exposed_contacts">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#gene_sequence_identity -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#gene_sequence_identity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#generation_interval -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#generation_interval">
         <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
     </owl:Class>
     
@@ -110,9 +278,33 @@
     
 
 
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_patient_infection_rate_per_100_admissions -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_patient_infection_rate_per_100_admissions">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion -->
 
     <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio">
         <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
     </owl:Class>
     
@@ -126,9 +318,185 @@
     
 
 
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#incubation_period -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incubation_period">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#infected_population -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infected_population">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate -->
 
     <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#infection_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#infectious_period -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infectious_period">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#latency_period -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#latency_period">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#morbidity -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#new_daily_case_rates -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_case_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#new_daily_cases -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_cases">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#new_daily_death_rates -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_death_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#non-pharmaceutical_interventions -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#non-pharmaceutical_interventions">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_by_testing -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_by_testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_exposure_events -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_exposure_events">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_school_exposure_events -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_school_exposure_events">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_schools_with_exposure_events -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_schools_with_exposure_events">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_tested_specimens -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tested_specimens">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#number_of_tests -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tests">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#opportunity -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#opportunity">
         <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
     </owl:Class>
     
@@ -142,9 +510,169 @@
     
 
 
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#per_capita_mobility -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#per_capita_mobility">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#percent_daily_change -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_daily_change">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#percent_increase_in_mortality -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_increase_in_mortality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_cases_which_are_detected -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_cases_which_are_detected">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_laboratory_findings -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_laboratory_findings">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#period_from_infectious_to_confirmed -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_from_infectious_to_confirmed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#population_size -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#positive_contacts -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#positive_contacts">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#prevalence -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#proportion_of_cases_attributed_to_travel -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#proportion_of_cases_attributed_to_travel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#protection_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#protection_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits -->
 
     <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#rate_cases_by_testing -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_cases_by_testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#rate_of_infectious_contacts -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_of_infectious_contacts">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#relative_change_in_new_infections -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_change_in_new_infections">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#relative_risk -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#risk_difference -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
     
 
 
@@ -157,10 +685,106 @@
     
 
 
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#sample_size -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#sample_size">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#sequence_identity_of_sample -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#sequence_identity_of_sample">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#serial_interval -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#serial_interval">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/covid19-epidemiology-ontology.owl#service_coverage_indicators -->
 
     <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#service_coverage_indicators">
         <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#health_status_indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#susceptibility -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#susceptibility">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#suspected_cases -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#suspected_cases">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#testing_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#testing_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#weighted_prevalence -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#weighted_prevalence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#average_daily_number_of_new_infections_generated_per_case_(rt) -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_daily_number_of_new_infections_generated_per_case_(rt)">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#length_of_intensive_care_unit_(icu)_stay -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#length_of_intensive_care_unit_(icu)_stay">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#points_of_interest_(pois) -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#points_of_interest_(pois)">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
     </owl:Class>
     
 
@@ -176,10 +800,298 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate"/>
             <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cluster_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#confirmed_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#critical_vaccination_coverage"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_excess_mortality"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#daily_deaths"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#device-specific_rates_and_procedure-specific_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#diagnostic_specificity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#exposed_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#gene_sequence_identity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#generation_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_patient_infection_rate_per_100_admissions"/>
             <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incubation_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infected_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infectious_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#latency_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#non-pharmaceutical_interventions"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_school_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_schools_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tested_specimens"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tests"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#opportunity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#per_capita_mobility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_daily_change"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_increase_in_mortality"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_cases_which_are_detected"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_laboratory_findings"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_from_infectious_to_confirmed"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#positive_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#proportion_of_cases_attributed_to_travel"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#protection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_change_in_new_infections"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#sample_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#sequence_identity_of_sample"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#serial_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#susceptibility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#suspected_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#testing_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#weighted_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#length_of_intensive_care_unit_(icu)_stay"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#points_of_interest_(pois)"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cluster_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#confirmed_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#critical_vaccination_coverage"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#daily_deaths"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#device-specific_rates_and_procedure-specific_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#diagnostic_specificity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#exposed_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#generation_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#hospital-wide_patient_infection_rate_per_100_admissions"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incubation_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infected_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infectious_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#latency_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#non-pharmaceutical_interventions"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_school_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_schools_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tested_specimens"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tests"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#opportunity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#per_capita_mobility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_daily_change"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percentage_of_cases_which_are_detected"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_from_infectious_to_confirmed"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#positive_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#proportion_of_cases_attributed_to_travel"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#protection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_change_in_new_infections"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#serial_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#susceptibility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#suspected_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#testing_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#weighted_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#length_of_intensive_care_unit_(icu)_stay"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#points_of_interest_(pois)"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#cumulative_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#daily_deaths"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#generation_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incubation_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infected_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infectious_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#latency_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_case_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_cases"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#new_daily_death_rates"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_cases_with_school_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_schools_with_exposure_events"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tested_specimens"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#number_of_tests"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#opportunity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#percent_daily_change"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#protection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_cases_by_testing"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#rate_of_infectious_contacts"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#serial_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#susceptibility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#testing_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#at-risk_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#basic_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#duration_of_infection"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#effective_reproduction_number"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#generation_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incubation_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infected_population"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infectious_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_exposed_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#latency_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#opportunity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#protection_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quarantine_period"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#reproductive_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#serial_interval"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#susceptibility"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#transmission_probability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#birth_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#fertility_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion_ratio"/>
             <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
             <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#morbidity"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#neonatal_mortality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#odds_ratio"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#period_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#point_prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#population_size"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#prevalence"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#relative_risk"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_difference"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#secondary_attack_rate"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
