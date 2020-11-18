@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/covid19-epidemiology-ontology.owl#"
+     xml:base="http://purl.org/covid19-epidemiology-ontology.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/covid19-epidemiology-ontology.owl">
+        <owl:versionIRI rdf:resource="http://purl.org/covid19-epidemiology-ontology/v1.0/release.owl"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-0169-8159"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elena de la Calle</terms:creator>
+        <terms:description xml:lang="en">The COVID-19 epidemiology ontology provides a model for describing, sharing and integrating of COVID-19 epidemiological data for outbreak monitoring and research.</terms:description>
+        <terms:issued>13-11-2020</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">COVID-19 epidemiology ontology (CoVEO)</terms:title>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#health_status_indicators -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#health_status_indicators">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#other_indicators"/>
+        <owl:disjointWith rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#health_systems_indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#health_systems_indicators -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#health_systems_indicators">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#other_indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#other_indicators -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#other_indicators">
+        <owl:disjointWith rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#quantitative_traits"/>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#risk_factors_indicators -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#risk_factors_indicators">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#health_status_indicators"/>
+        <owl:disjointWith rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#service_coverage_indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/covid19-epidemiology-ontology.owl#service_coverage_indicators -->
+
+    <owl:Class rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#service_coverage_indicators">
+        <rdfs:subClassOf rdf:resource="http://purl.org/covid19-epidemiology-ontology.owl#health_status_indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#case_fatality_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_proportion"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#incidence_rate"/>
+            <rdf:Description rdf:about="http://purl.org/covid19-epidemiology-ontology.owl#infection_fatality_rate"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
