@@ -108,10 +108,10 @@ Expand to other indicators such as WHO indicators:
 9. Expressive probabilistic description logics [[DOI](https://doi.org/10.1016/j.artint.2007.10.017)]
 
 ## General references
-1. <a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" height="250" weight="250" target="_blank">
+1. <a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" height="250" weight="250" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg"></a>
 2. [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/)
 3. From Kees van Bochove (twitter, the hyve::ohdsi): Have a look at the way we used [schema.org](http://schema.org) to express structured metadata about observational studies [model](https://github.com/thehyve/ohdsi-schemas/blob/master/models/ohdsi_model/ohdsi_semantic_model.ttl) and example study
-4. On the usefulness of ontologies in epidemiology research and practice[[PMC ID](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)]
+4. On the usefulness of ontologies in epidemiology research and practice [[PMC ID](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)]
 
 
 
