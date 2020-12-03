@@ -97,8 +97,8 @@ Expand to other indicators such as WHO indicators:
 * https://github.com/thehyve/ohdsi-schemas/blob/master/models/ohdsi_model/ohdsi_semantic_model.ttl
 
 ### B Review models - design patterns
-1. Statistics Ontology (STATO) [[website]((http://stato-ontology.org/ )] (contact Philippe Rocca-Serra)
-2. Epidemiology Ontology (EPO) `deprecated` [[ontobee](http://www.ontobee.org/ontology/catalog/EPO?iri=http://www.w3.org/2002/07/owl%23Class)]
+1. Statistics Ontology (STATO) [[website](http://stato-ontology.org/ )] (contact Philippe Rocca-Serra)
+2. Epidemiology Ontology (EPO) <div class="text-red mb-2">deprecated</div> [[ontobee](http://www.ontobee.org/ontology/catalog/EPO?iri=http://www.w3.org/2002/07/owl%23Class)]
 3. Infectious Disease Ontology (IDO) [[ontobee](http://www.ontobee.org/ontology/IDO)]
 4. CoVoc Coronavirus Vocabulary (CoVoc) [[EBI OLS](https://www.ebi.ac.uk/ols/ontologies/covoc)]
 5. Genomic Epidemiology Ontology (GenEpiO) [[ontobee](http://www.ontobee.org/ontology/GENEPIO)]
@@ -108,8 +108,8 @@ Expand to other indicators such as WHO indicators:
 9. Expressive probabilistic description logics [[DOI](https://doi.org/10.1016/j.artint.2007.10.017)]
 
 ## General references
-1. <img alt="CRAI URV books" src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" height="250" weight="250")>
-2. [[WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/)]
+1. <a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" height="250" weight="250" target="_blank">
+2. [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/)
 3. From Kees van Bochove (twitter, the hyve::ohdsi): Have a look at the way we used [schema.org](http://schema.org) to express structured metadata about observational studies [model](https://github.com/thehyve/ohdsi-schemas/blob/master/models/ohdsi_model/ohdsi_semantic_model.ttl) and example study
 4. On the usefulness of ontologies in epidemiology research and practice[[PMC ID](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)]
 
