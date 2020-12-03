@@ -1,6 +1,6 @@
 # Epidemiology and monitoring ontology for COVID-19
 
-This project was conceived during the virtual BioHackathon-COVID 2020 and started at the ELIXIR-Europe BioHackathon 2020 [GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30). This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
+This project was conceived during the virtual BioHackathon-COVID 2020 and started at the ELIXIR-Europe BioHackathon 2020 [[GitHub]](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30). This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
 
 
 ## Abstract
@@ -61,8 +61,8 @@ From the first list of epidemiological quantitative terms analyzed, our plan is 
 We plan to perform two rounds of work, a first round to focus on quantitative indicators and a second round to expand to other indicators such as [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/).
 
 ## Current outcomes
-1. list of relevant terms manualy curated from publications, case report forms and institutional official websites [collaborative gsheet](https://docs.google.com/spreadsheets/d/1kS0nSc6lVjrRj1ZoP8i2ZJI3UIwEzeHZ6BayxZXarSE/edit?usp=sharing)
-2. formal ontology in owl under development [ontocovid.owl](https://raw.githubusercontent.com/NuriaQueralt/covid19-epidemiology-ontology/main/owl/covid19-epidemiology-ontology.owl)
+1. list of relevant terms manualy curated from publications, case report forms and institutional official websites [[collaborative gsheet]](https://docs.google.com/spreadsheets/d/1kS0nSc6lVjrRj1ZoP8i2ZJI3UIwEzeHZ6BayxZXarSE/edit?usp=sharing)
+2. formal ontology in owl under development [[ontocovid.owl]](https://raw.githubusercontent.com/NuriaQueralt/covid19-epidemiology-ontology/main/owl/covid19-epidemiology-ontology.owl)
 
 ## References for curation and related models
 ### A Review terms
@@ -98,7 +98,7 @@ Expand to other indicators such as WHO indicators:
 
 ### B Review models - design patterns
 1. Statistics Ontology (STATO) [website]((http://stato-ontology.org/ )) (contact Philippe Rocca-Serra)
-2. Epidemiology Ontology (EPO) ´´´´_deprecated_´´´´ [ontobee](http://www.ontobee.org/ontology/catalog/EPO?iri=http://www.w3.org/2002/07/owl%23Class)
+2. Epidemiology Ontology (EPO) ```deprecated``` [[ontobee]](http://www.ontobee.org/ontology/catalog/EPO?iri=http://www.w3.org/2002/07/owl%23Class)
 3. Infectious Disease Ontology (IDO) [ontobee](http://www.ontobee.org/ontology/IDO)
 4. CoVoc Coronavirus Vocabulary (CoVoc) [EBI OLS](https://www.ebi.ac.uk/ols/ontologies/covoc) 
 5. Genomic Epidemiology Ontology (GenEpiO) [ontobee](http://www.ontobee.org/ontology/GENEPIO)
@@ -108,7 +108,7 @@ Expand to other indicators such as WHO indicators:
 9. Expressive probabilistic description logics [DOI](https://doi.org/10.1016/j.artint.2007.10.017)
 
 ## General references
-1. [CRAI URV books](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg = 250x250)
+1. CRAI URV books ![](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg =250x250)
 2. [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/)
 3. From Kees van Bochove (twitter, the hyve::ohdsi): Have a look at the way we used [schema.org](http://schema.org) to express structured metadata about observational studies [model](https://github.com/thehyve/ohdsi-schemas/blob/master/models/ohdsi_model/ohdsi_semantic_model.ttl) and example study
 4. [On the usefulness of ontologies in epidemiology research and practice](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)
