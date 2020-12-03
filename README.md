@@ -1,6 +1,6 @@
 # Epidemiology and monitoring ontology for COVID-19
 
-This project was conceived during the virtual BioHackathon-COVID 2020 and started at the ELIXIR-Europe BioHackathon 2020 [[GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30)]. This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
+This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [[GitHub](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology)] and started at the ELIXIR-Europe BioHackathon 2020 [[GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30)]. This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
 
 
 ## Abstract
