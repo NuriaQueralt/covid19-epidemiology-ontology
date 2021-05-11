@@ -2,6 +2,14 @@
 
 This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [[GitHub](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology)] and started at the ELIXIR-Europe BioHackathon 2020 [[GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30)]. This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
 
+## Ontological model
+This model is based on the [SIO Design Pattern for measurement](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements) and the [EJP RD CDE Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png):
+
+<a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19-epidemiology-model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19-epidemiology-model.png" height="50%" weight="50%"></a>
+
+## Axiom patterns
+We have reused 'Death' model to describe timelines..
+
 
 ## Abstract
 
