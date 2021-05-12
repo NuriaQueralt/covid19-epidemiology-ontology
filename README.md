@@ -1,17 +1,102 @@
-# Epidemiology and monitoring ontology for COVID-19
+# The COVID-19 epidemiology and monitoring ontology 
 
-This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [[GitHub](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology)] and started at the ELIXIR-Europe BioHackathon 2020 [[GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30)]. This project is not supported by any institution, it is just the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
+The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a common ontological model to make epidemiological quantitative data for monitoring the COVID-19 outbreak machine-readable and interoperable to facilitate its exchange, integration and analysis, to eventually support evidence-based rapid response. This ontology is built following knowledge-engineering standards and the OBO principles to bridge epidemiology into the semantic landscape of the biomedical sciences. See a detailed description of the model and the axiom patterns implemented in the following section.  
 
-## Ontological model
-This model is based on the [SIO Design Pattern for measurement](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements) and the [EJP RD CDE Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png):
-
-<a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19-epidemiology-model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19-epidemiology-model.png" height="50%" weight="50%"></a>
-
-## Axiom patterns
-We have reused 'Death' model to describe timelines..
+This is the first release of the ontology, which will be refined iteratively with domain experts and users. This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [BH-COVID19 2020 GitHub](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology) and started at the ELIXIR-Europe BioHackathon 2020 [BH-EU 2020 GitHub](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30), see project description below. This project is the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute!
 
 
-## Abstract
+## Formal description
+
+CEMO is an OBO ontology, i.e. founded on the BFO hierarchy, and formalized through SIO and GFO upper-level ontologies. The taxonomic structure is extended from IDO, a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
+
+Our formal modeling followed a rationale already used in other studies: 1) determine the domain and scope of the ontology; 2) ontology reuse and addressing poor ontological coverage of COVID-19 epidemiology; and 3) development of a conceptual model.
+
+
+
+### Domain scope
+
+We extracted core domain knowledge concepts from Epidemiology Surveillance reference books and a handbook of Epidemiology. The list of core concepts for interpretation are: person, cohort, population, time, space, infection, line of infection, disease, line of disease, transmission, exposure, risk factor, contagiousness, virulence, source of infection, distribution, case, natural history, etiology, and infectious dose. 
+
+
+
+### Re-use
+
+We re-used ontological terms and models as much as possible. Specifically we re-used:
+
+1) **Terms** from IDO for the infectious disease domain and from STATO, APOLLO\_SV and GENEPIO for epidemiology. We mapped the manually extracted list of terms to these ontological terms using ontology search engines such as Ontobee and OLS EBI.
+2) **Quantitative Models** for quantitative data, specifically: our minimal model for clinical measurements presented at the ISMB/ECCB Bio-Ontologies COSI 2020; the SIO design pattern for measurements; the EJP RD Core model for patient registries data; and the Beat-COVID model for health data in the LUMC. 
+3) **Mortality Model** based on the GFO foundational ontology and Morbidity and Mortality data in databases for epidemiology research in Brazil.
+4) **Person-Patient Relationship Description** for biomedical research, specifically the GA4GH Phenopackets standard and the OMOP common data model.
+
+
+
+### Ontological model
+
+We developed a conceptual model for quantitative epidemiological data. This model is based on the [SIO Design Pattern for measurement](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements) and the [EJP RD CDE Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png).
+
+In an outbreak, descriptive epidemiology or the calculation of different measures of frequency that depend on *person*, *time* and *space* parameters, where entities under study are populations or patients, is first applied to characterize and monitor it. A graphical representation of the model: 
+
+<a alt="Epidemiology Monitoring model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19_epidemiology_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19_epidemiology_model.png" height="50%" weight="50%"></a>
+
+##### Use case: analytical epidemiology
+In analytical epidemiology are frequent observational studies to establish causal-effect relations, where the disease-risk factors association is evaluated. A graphical representation of the model extended for this use:
+
+<a alt="Epidemiology Monitoring cohort model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/cohort_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/cohort_model.png" height="50%" weight="50%"></a>
+
+
+
+### Axiom patterns
+
+We implemented axiom patterns to describe epidemiological quantitative parameters and timelines domain concepts. For quantitative parameters we added the following axiomatization (in OWL Manchester Syntax):
+
+```owl
+"epidemiology quantitative quality" SubClassOf [(*is_attribute_of* some "entity") and (*is_about* some "epi core concept")]
+```
+
+	* `Entity`: we use one of the GFO-based concepts to link to epidemiological parameters for descritive epidemiology: *person*, *time*, *space*, *line of infection* or *line of disease*.
+	
+	* `epi core concept`: we use one of the epidemiology core concepts for interpretation.i
+
+For instance:
+
+```owl
+"incidence" SubClassOf (*is_attribute_of* some "space")
+            and (*is_about* some "distribution")
+            and (*is_about* some "source of infection")
+```
+
+For timelines we re-used GFO using the 'chronoid' concept and the GFO-based 'mortality' model approach with the following axiomatization:
+
+```owl
+"incubation period" SubClassOf "process"
+                    and (*caused_by* only "infectious process")
+                    and (*has_participant* only "person"
+                    and (*projects_to* exactly 1 "chronoid")
+```
+ 
+For this pattern we needed to integrate the *time* concept as an individual item and its subclass `chronoid` in the ontology. *Process* concept in BFO is logically equivalent to *Process* concept in GFO. 
+This is a first approach, we aim to extend it in further iterations of the model to chain temporal periods in an ordered and formal description of the timeline.
+
+
+### Formal description of patient-population link 
+
+To link patient-population information we re-used the relationship in the GA4GH Phenopackets standard based on `composition` semantics and formalized with the axiom:
+
+```owl
+"population" *has_member* "person"
+```
+
+To allow reasoning for discovery in translational research, we aim to extend this description to more expressive DL-based definition.
+
+
+### FAIR ontology
+
+We base our decisions on building this ontology to follow as much as possible the FAIR principles.
+
+
+
+## Epidemiology and monitoring ontology for COVID-19 project
+### Abstract
 
 Epidemiological data is necessary to monitor public health, and to assess the impact of disease outbreaks and efficacy of mitigating interventions. In the context of an infectious disease outbreak it is imperative to have these data as FAIR as possible to facilitate rapid analysis to support timely evidence-based decision making. During the past virtual BioHackathon-COVID-19 we evaluated the availability of some epidemiological quantitative indicators in OBO ontologies and detected that while between the [Statistics ontology](http://stato-ontology.org/) and Epidemiology Ontology (EPO) we have many of the usual concepts described, essential classes are entirely missing for capturing these different indicators with the precision required, and also definition reconciliation needs to be done. Furthermore, we noticed that EPO is not maintained since its publication and has been deprecated from OBO Foundry [1]. Another issue that may be improved is the current absence of axioms and definition patterns that relate epidemiology (i.e., observations of a population) to clinical ontologies (i.e., observations on an individual). A formal model is needed to describe epidemiological data for monitoring events such as COVID-19 disease as well as to capture information related to other disease outbreaks and future epidemics. 
 
@@ -32,12 +117,12 @@ Our main goal is to provide a minimal epidemiological ontology developed during 
 
 Our project will facilitate epidemiological and bioinformatic studies enabling machine-readable and interoperable epidemiological data through common ontologies with application on patient data. Many of the solutions we expect to develop will be of general utility and we expect that the unified, or extended and axiomatised ontology will integrate as a bridging and facilitating component into the semantic landscape of the biomedical sciences.
 
-## Topics
+### Topics
 
 Covid-19 | Data Platform | Federated Human Data | Interoperability Platform
 
 
-## Team
+### Team
 
 ### Lead(s)
 
@@ -52,11 +137,11 @@ Covid-19 | Data Platform | Federated Human Data | Interoperability Platform
 <!-- Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ],-->
 <!-- Rajaram Kaliyaperumal [ R.Kaliyaperumal@lumc.nl ] -->
 
-## Expected outcomes
+### Expected outcomes
 
 Develop an epidemiology information model in OBO focused on quantitative indicators. Incorporate this model in an existing resource for the community.
  
-## Plan
+### Plan
 
 From the first list of epidemiological quantitative terms analyzed, our plan is to: 
 
@@ -68,9 +153,9 @@ From the first list of epidemiological quantitative terms analyzed, our plan is 
 
 We plan to perform two rounds of work, a first round to focus on quantitative indicators and a second round to expand to other indicators such as [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/).
 
-## Current outcomes
+### Current outcomes
 1. list of relevant terms manualy curated from publications, case report forms and institutional official websites [[collaborative gsheet](https://docs.google.com/spreadsheets/d/1kS0nSc6lVjrRj1ZoP8i2ZJI3UIwEzeHZ6BayxZXarSE/edit?usp=sharing)]
-2. formal ontology in owl under development [[ontocovid.owl](https://raw.githubusercontent.com/NuriaQueralt/covid19-epidemiology-ontology/main/owl/covid19-epidemiology-ontology.owl)]
+2. formal ontology in owl under development [[cemo.owl](https://raw.githubusercontent.com/NuriaQueralt/covid19-epidemiology-ontology/main/owl/cemo.owl)]
 
 ## References for curation and related models
 ### A Review terms
