@@ -53,9 +53,13 @@ We implemented axiom patterns to describe epidemiological quantitative parameter
 "epidemiology quantitative quality" SubClassOf [(*is_attribute_of* some "entity") and (*is_about* some "epi core concept")]
 ```
 
+See what `entity` and `epi core concept` mean:
+
 	* `Entity`: we use one of the GFO-based concepts to link to epidemiological parameters for descritive epidemiology: *person*, *time*, *space*, *line of infection* or *line of disease*.
 	
 	* `epi core concept`: we use one of the epidemiology core concepts for interpretation.i
+
+
 
 For instance:
 
@@ -92,6 +96,11 @@ To allow reasoning for discovery in translational research, we aim to extend thi
 ### FAIR ontology
 
 We base our decisions on building this ontology to follow as much as possible the FAIR principles.
+
+
+### Summary
+
+<a alt="Summay" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/summary_presicion_medicine.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/summary_precision_medicine.png" height="50%" weight="50%"></a>
 
 
 
