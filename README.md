@@ -50,7 +50,9 @@ In analytical epidemiology are frequent observational studies to establish causa
 We implemented axiom patterns to describe epidemiological quantitative parameters and timelines domain concepts. For quantitative parameters we added the following axiomatization (in OWL Manchester Syntax):
 
 ```owl
-"epidemiology quantitative quality" SubClassOf [(*is_attribute_of* some "entity") and (*is_about* some "epi core concept")]
+"epidemiology quantitative quality" SubClassOf 
+                                             [(*is_attribute_of* some "entity") 
+                                             and (*is_about* some "epi core concept")]
 ```
 
 See what `entity` and `epi core concept` mean:
