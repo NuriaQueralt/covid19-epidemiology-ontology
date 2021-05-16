@@ -15,7 +15,7 @@ Our formal modeling followed a rationale already used in other studies: 1) deter
 
 ### Domain scope
 
-We extracted core domain knowledge concepts from Epidemiology Surveillance reference books and a handbook of Epidemiology. The list of core concepts for interpretation are: person, cohort, population, time, space, infection, line of infection, disease, line of disease, transmission, exposure, risk factor, contagiousness, virulence, source of infection, distribution, case, natural history, etiology, and infectious dose. 
+We extracted core domain knowledge concepts from Epidemiology Surveillance reference books \[Ferran Martínez Navarro et al. Vigilancia Epidemiológica. McGraw-Hill Interameri-cana, 2004. ISBN:84-486-0245-5\]\[B. MacMahon and D. Trichopoulos. Marbán SL, Harvard Medical School of Public Health, Boston, Massachussetts. ISBN:84-7101-317-7\] and a [handbook of Epidemiology](https://doi.org/10.1007/978-0-387-09834-0_34). The list of core concepts for interpretation are: person, cohort, population, time, space, infection, line of infection, disease, line of disease, transmission, exposure, risk factor, contagiousness, virulence, source of infection, distribution, case, natural history, etiology, and infectious dose. 
 
 
 
