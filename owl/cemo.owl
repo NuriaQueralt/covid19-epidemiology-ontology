@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cemo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cemo/releases/12-05-2021/cemo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cemo/releases/16-05-2021/cemo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <obo:IAO_0000119 xml:lang="en">The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a model for describing, sharing and integrating of COVID-19 epidemiological data for outbreak monitoring and research.</obo:IAO_0000119>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elena de la Calle</dc:contributor>
@@ -23,10 +23,10 @@
         <dc:contributor>https://orcid.org/0000-0003-0351-6523</dc:contributor>
         <dc:contributor>https://orcid.org/0000-0003-1795-5930</dc:contributor>
         <dc:creator rdf:resource="http://orcid.org/0000-0003-0169-8159"/>
-        <terms:issued>15-05-2021</terms:issued>
+        <terms:issued>16-05-2021</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">COVID-19 Epidemiology and Monitoring Ontology (CEMO)</terms:title>
-        <owl:versionInfo>15-05-2021</owl:versionInfo>
+        <owl:versionInfo>16-05-2021</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -172,8 +172,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#population"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has member</rdfs:label>
     </owl:ObjectProperty>
     
@@ -357,7 +357,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#caused_by"/>
@@ -383,6 +383,16 @@ Entities which are in time are related to the corresponding temporal regions by 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">A population of organisms that have been infected, but are no longer able to transmit the disease and to acquire the infection again.</terms:description>
         <rdfs:label xml:lang="en">recovered cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">case</rdfs:label>
     </owl:Class>
     
 
@@ -423,6 +433,15 @@ Entities which are in time are related to the corresponding temporal regions by 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">A data item that is the output of some infection case count.</terms:description>
         <rdfs:label xml:lang="en">total number of cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">natural history</rdfs:label>
     </owl:Class>
     
 
@@ -500,10 +519,21 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">virulence factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000458 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">contagiousness</rdfs:label>
     </owl:Class>
     
@@ -518,19 +548,19 @@ Entities which are in time are related to the corresponding temporal regions by 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#case"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virulence"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -574,7 +604,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -618,6 +648,7 @@ Entities which are in time are related to the corresponding temporal regions by 
     <!-- http://purl.obolibrary.org/obo/IDO_0000509 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:label xml:lang="en">organism population</rdfs:label>
     </owl:Class>
@@ -668,7 +699,17 @@ Entities which are in time are related to the corresponding temporal regions by 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000586">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
+        <rdfs:label xml:lang="en">host exposure to infectious agent</rdfs:label>
     </owl:Class>
     
 
@@ -677,6 +718,8 @@ Entities which are in time are related to the corresponding temporal regions by 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000665">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">infection source</rdfs:label>
         <rdfs:label xml:lang="en">source of infection</rdfs:label>
     </owl:Class>
     
@@ -692,7 +735,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#caused_by"/>
@@ -725,6 +768,7 @@ Entities which are in time are related to the corresponding temporal regions by 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
         <rdfs:label xml:lang="en">person</rdfs:label>
     </owl:Class>
     
@@ -761,6 +805,7 @@ Entities which are in time are related to the corresponding temporal regions by 
     <!-- http://purl.obolibrary.org/obo/NCIT_C67448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">The dose of pathogens received by the exposed individual.</terms:description>
         <rdfs:label xml:lang="en">infectious dose</rdfs:label>
@@ -791,7 +836,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -839,11 +884,41 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:label xml:lang="en">line of disease</rdfs:label>
     </owl:Class>
     
 
@@ -896,7 +971,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -911,6 +986,16 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">confidence interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">cohort</rdfs:label>
     </owl:Class>
     
 
@@ -938,7 +1023,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
@@ -977,6 +1062,16 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000424">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">risk difference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TRANS_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">transmission</rdfs:label>
     </owl:Class>
     
 
@@ -1020,15 +1115,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#case -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">case</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate">
@@ -1038,19 +1124,19 @@ Entities which are in time are related to the corresponding temporal regions by 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#case"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#contagiousness"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virulence"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1080,30 +1166,12 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cohort -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cohort">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">cohort</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#complication_rate -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#complication_rate">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Proportion of confirmed cases that suffered complications.</terms:description>
         <rdfs:label xml:lang="en">complication rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#contagiousness -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#contagiousness">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">contagiousness</rdfs:label>
     </owl:Class>
     
 
@@ -1191,15 +1259,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#disease -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#disease">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">disease</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#distribution -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#distribution">
@@ -1224,6 +1283,15 @@ Entities which are in time are related to the corresponding temporal regions by 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Not all contacts will become infected and the average number of secondary cases per infectious case will be lower than the basic reproduction number. The effective reproductive number (R) is the average number of secondary cases per infectious case in a population made up of both susceptible and non-susceptible hosts.</terms:description>
         <rdfs:label xml:lang="en">effective reproduction number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#environmental_risk_factor -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#environmental_risk_factor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
+        <rdfs:label xml:lang="en">environmental risk factor</rdfs:label>
     </owl:Class>
     
 
@@ -1286,6 +1354,7 @@ Entities which are in time are related to the corresponding temporal regions by 
     <!-- http://purl.obolibrary.org/obo/cemo.owl#exposure -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">exposure</rdfs:label>
     </owl:Class>
@@ -1368,20 +1437,20 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#host_risk_factor -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#host_risk_factor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
+        <rdfs:label xml:lang="en">host risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">incidence of sever outcomes</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infection -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">infection</rdfs:label>
     </owl:Class>
     
 
@@ -1392,24 +1461,6 @@ Entities which are in time are related to the corresponding temporal regions by 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects.</terms:description>
         <rdfs:label xml:lang="en">infection fatality rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infection_source -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_source">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">infection source</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infectious_dose -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infectious_dose">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">infectious dose</rdfs:label>
     </owl:Class>
     
 
@@ -1446,15 +1497,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#interpretation">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts"/>
         <rdfs:label xml:lang="en">interpretation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#line_of_disease -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_disease">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:label xml:lang="en">line of disease</rdfs:label>
     </owl:Class>
     
 
@@ -1501,15 +1543,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases_hospitalized">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">median age of cases hospitalized</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#natural_history -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#natural_history">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">natural history</rdfs:label>
     </owl:Class>
     
 
@@ -1850,7 +1883,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#caused_by"/>
@@ -1865,24 +1898,6 @@ Entities which are in time are related to the corresponding temporal regions by 
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">period from infectious to confirmed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#person -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#person">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:label xml:lang="en">person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">population</rdfs:label>
     </owl:Class>
     
 
@@ -1942,7 +1957,7 @@ Entities which are in time are related to the corresponding temporal regions by 
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#caused_by"/>
@@ -1961,11 +1976,11 @@ Entities which are in time are related to the corresponding temporal regions by 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#case"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2068,19 +2083,19 @@ Entities which are in time are related to the corresponding temporal regions by 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#case"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#contagiousness"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virulence"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#person"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2154,15 +2169,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#transmission -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#transmission">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">transmission</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#undetected_cases -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#undetected_cases">
@@ -2177,15 +2183,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#untraceable_contacts">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">untraceable contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#virulence -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#virulence">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">virulence</rdfs:label>
     </owl:Class>
     
 
@@ -2405,11 +2402,11 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#transmission"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
