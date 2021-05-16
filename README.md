@@ -7,7 +7,7 @@ This is the first release of the ontology, which will be refined iteratively wit
 
 ## Formal description
 
-CEMO is an OBO ontology, i.e. founded on the BFO hierarchy, and formalized through SIO and GFO upper-level ontologies. The taxonomic structure is extended from IDO, a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
+CEMO is an OBO ontology, i.e. founded on the [BFO](http://www.obofoundry.org/ontology/bfo.html) hierarchy, and formalized through [SIO](https://github.com/MaastrichtU-IDS/semanticscience) and [GFO](https://www.onto-med.de/ontologies/gfo) upper-level ontologies. The taxonomic structure is extended from [IDO](http://www.obofoundry.org/ontology/ido.html), a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
 
 Our formal modeling followed a rationale already used in other studies: 1) determine the domain and scope of the ontology; 2) ontology reuse and addressing poor ontological coverage of COVID-19 epidemiology; and 3) development of a conceptual model.
 
@@ -23,16 +23,16 @@ We extracted core domain knowledge concepts from Epidemiology Surveillance refer
 
 We re-used ontological terms and models as much as possible. Specifically we re-used:
 
-1) **Terms** from IDO for the infectious disease domain and from STATO, APOLLO\_SV and GENEPIO for epidemiology. We mapped the manually extracted list of terms to these ontological terms using ontology search engines such as Ontobee and OLS EBI.
-2) **Quantitative Models** for quantitative data, specifically: our minimal model for clinical measurements presented at the ISMB/ECCB Bio-Ontologies COSI 2020; the SIO design pattern for measurements; the EJP RD Core model for patient registries data; and the Beat-COVID model for health data in the LUMC. 
-3) **Mortality Model** based on the GFO foundational ontology and Morbidity and Mortality data in databases for epidemiology research in Brazil.
-4) **Person-Patient Relationship Description** for biomedical research, specifically the GA4GH Phenopackets standard and the OMOP common data model.
+1) **Terms** from IDO for the infectious disease domain and from [STATO](http://www.obofoundry.org/ontology/stato.html), [APOLLO\_SV](http://www.obofoundry.org/ontology/apollo_sv.html) and [GENEPIO](http://www.obofoundry.org/ontology/genepio.html) for epidemiology. We mapped the manually extracted list of terms to these ontological terms using ontology search engines such as [Ontobee](http://www.ontobee.org/) and [Ontology Lookup Service - EBI](https://www.ebi.ac.uk/ols/index).
+2) **Quantitative Models** for quantitative data, specifically: our [minimal model for clinical measurements](https://github.com/NuriaQueralt/BioHackathon/tree/master/bh20-ontology-qt) presented at the ISMB/ECCB Bio-Ontologies COSI 2020; the [SIO design pattern for measurements](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements); the [EJP RD Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png) for patient registries data; and the [Beat-COVID model](https://repository.publisso.de/resource/frl%3A6424233) for health data in the LUMC. 
+3) **Mortality Model** based on the GFO foundational ontology and Morbidity and Mortality data in databases for epidemiology research in Brazil [Santana F, Freitas F, Fernandes R, Medeiros Z, Schober D. Towards an ontological representation of morbidity and mortality in Description Logics. J Biomed Semantics. 2012;3 Suppl 2(Suppl 2):S7. doi:10.1186/2041-1480-3-S2-S7](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3448531/).
+4) **Person-Patient Relationship Description** for biomedical research, specifically the [GA4GH Phenopackets standard](https://phenopackets-schema.readthedocs.io/en/v2/cohort.html) and the [OMOP common data model](https://link.springer.com/article/10.1007/s40273-020-00981-9/figures/1).
 
 
 
 ### Ontological model
 
-We developed a conceptual model for quantitative epidemiological data. This model is based on the [SIO Design Pattern for measurement](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements) and the [EJP RD CDE Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png).
+We developed a conceptual model for quantitative epidemiological data. This model is based on the [minimal model for clinical measurements](https://github.com/NuriaQueralt/BioHackathon/tree/master/bh20-ontology-qt); the [SIO Design Pattern for measurement](https://github.com/MaastrichtU-IDS/semanticscience/wiki/DP-Measurements); the [EJP RD CDE Core model](https://github.com/ejp-rd-vp/CDE-semantic-model/blob/develop/images/rdf/sio-model/Annotated%20General%20model%20SIO.png); and the [Beat-COVID model](https://repository.publisso.de/resource/frl%3A6424233) for health data in the LUMC.
 
 In an outbreak, descriptive epidemiology or the calculation of different measures of frequency that depend on *person*, *time* and *space* parameters, where entities under study are populations or patients, is first applied to characterize and monitor it. A graphical representation of the model: 
 
