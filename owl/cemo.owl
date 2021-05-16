@@ -437,6 +437,22 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Event"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
@@ -2289,6 +2305,32 @@ equivalently called time-points.</terms:description>
     
 
 
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Concrete -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Concrete">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
+        <rdfs:label xml:lang="en">concrete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Event -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Occurrent"/>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Individual -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Individual">
+        <rdfs:label xml:lang="en">individual</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary">
@@ -2305,6 +2347,40 @@ equivalently called time-points.</terms:description>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
         <rdfs:label xml:lang="en">left time boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Occurrent -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Occurrent">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
+        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
+        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Process -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Process">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#projects_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concrete"/>
+        <rdfs:label xml:lang="en">processual structure</rdfs:label>
     </owl:Class>
     
 
@@ -2333,8 +2409,18 @@ equivalently called time-points.</terms:description>
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Space">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space_time"/>
         <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
         <rdfs:label xml:lang="en">space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Space_time -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Space_time">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
+        <rdfs:label xml:lang="en">space time entity</rdfs:label>
     </owl:Class>
     
 
@@ -2355,6 +2441,7 @@ i.e. time regions may consist of non-connected intervals of time.</terms:descrip
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space_time"/>
         <terms:description xml:lang="en">The time model of GFO is based on Brentano and the glass continuum of Allen&amp;Hayes.</terms:description>
         <rdfs:label xml:lang="en">time</rdfs:label>
     </owl:Class>
