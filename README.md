@@ -59,7 +59,7 @@ See what `entity` and `epi core concept` mean:
 
 	* `Entity`: we use one of the GFO-based concepts to link to epidemiological parameters for descritive epidemiology: *person*, *time*, *space*, *line of infection* or *line of disease*.
 	
-	* `epi core concept`: we use one of the epidemiology core concepts for interpretation.i
+	* `epi core concept`: we use one of the epidemiology core concepts for interpretation.
 
 
 
