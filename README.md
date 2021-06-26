@@ -150,15 +150,15 @@ Covid-19 | Data Platform | Federated Human Data | Interoperability Platform
 
 ### Authors
 
- Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ]
- Paul N. Schofield
- Robert Hoehndorf
- Claus Weiland
- Erik Schultes
- César H. Bernabé
+ Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ],
+ Paul N. Schofield,
+ Robert Hoehndorf,
+ Claus Weiland,
+ Erik Schultes,
+ César H. Bernabé,
  Marco Roos
  
-### Contributor(s)
+### Contributors
  Elena de la Calle [ elena.delacalle@bsc.es ],
  Philippe Rocca-Serra [ philippe.rocca-serra@oerc.ox.ac.uk ]
 
