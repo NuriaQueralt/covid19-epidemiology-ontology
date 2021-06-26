@@ -2,7 +2,20 @@
 
 The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a common ontological model to make epidemiological quantitative data for monitoring the COVID-19 outbreak machine-readable and interoperable to facilitate its exchange, integration and analysis, to eventually support evidence-based rapid response. This ontology is built following knowledge-engineering standards and the OBO principles to bridge epidemiology into the semantic landscape of the biomedical sciences. See a detailed description of the model and the axiom patterns implemented in the following section.  
 
-This is the first release of the ontology, which will be refined iteratively with domain experts and users. This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [(BH-COVID19 2020 GitHub)](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology) and started at the ELIXIR-Europe BioHackathon 2020 [(BH-EU 2020 GitHub)](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30), see project description below. This project is the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. Feel free to contact or fork the repo to contribute! Note that **CEMO is currently under development** and subject to change. Please leave us a comment on the [issue tracker](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/issues) if you want to be involved.
+This is the first release of the ontology, which will be refined iteratively with domain experts and users. This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [(BH-COVID19 2020 GitHub)](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology) and started at the ELIXIR-Europe BioHackathon 2020 [(BH-EU 2020 GitHub)](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30), see project description below, and continued during the [SWAT4HCLS virtual hackathon 2021](https://swat4hcls.wiki.opencura.com/wiki/Main_Page#Title:_Adding_logical_structure_to_the_COVID-19_epidemiology_ontology). This project is the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. 
+
+### I want to give you feedback
+
+Please leave us a comment on the [issue tracker](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/issues).
+
+
+### I want to contribute
+
+Feel free to fork & make PR to contribute! 
+
+Note that **CEMO is currently under development** and subject to change. 
+
+Please leave us a comment on the [issue tracker](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/issues) if you want to be involved.
 
 
 ## Formal description
@@ -36,12 +49,12 @@ We developed a conceptual model for quantitative epidemiological data. This mode
 
 In an outbreak, descriptive epidemiology or the calculation of different measures of frequency that depend on *person*, *time* and *space* parameters, where entities under study are populations or patients, is first applied to characterize and monitor it. A graphical representation of the model: 
 
-<a alt="Epidemiology Monitoring model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19_epidemiology_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/covid19_epidemiology_model.png" height="50%" weight="50%"></a>
+<a alt="Epidemiology Monitoring model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model.png" height="50%" weight="50%"></a>
 
 ##### Use case: analytical epidemiology
 In analytical epidemiology are frequent observational studies to establish causal-effect relations, where the disease-risk factors association is evaluated. A graphical representation of the model extended for this use:
 
-<a alt="Epidemiology Monitoring cohort model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/cohort_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/cohort_model.png" height="50%" weight="50%"></a>
+<a alt="Epidemiology Monitoring cohort model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model.png" height="50%" weight="50%"></a>
 
 
 
@@ -102,7 +115,7 @@ We base our decisions on building this ontology to follow as much as possible th
 
 ### Summary
 
-<a alt="Summay" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/summary_presicion_medicine.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/summary_precision_medicine.png" height="50%" weight="50%"></a>
+<a alt="Summay" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/summary_presicion_medicine.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/summary_precision_medicine.png" height="50%" weight="50%"></a>
 
 
 
@@ -135,9 +148,15 @@ Covid-19 | Data Platform | Federated Human Data | Interoperability Platform
 
 ### Team
 
-### Lead(s)
+### Authors
 
  Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ]
+ Paul N. Schofield
+ Robert Hoehndorf
+ Claus Weiland
+ Erik Schultes
+ César H. Bernabé
+ Marco Roos
  
 ### Contributor(s)
  Elena de la Calle [ elena.delacalle@bsc.es ],
@@ -212,7 +231,7 @@ Expand to other indicators such as WHO indicators:
 9. Expressive probabilistic description logics [[DOI](https://doi.org/10.1016/j.artint.2007.10.017)]
 
 ## General references
-1. <a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/images/epidemiology_books.jpg" height="50%" weight="50%"></a>
+1. <a alt="CRAI URV books" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/epidemiology_books.jpg" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/epidemiology_books.jpg" height="50%" weight="50%"></a>
 2. [WHO indicators](https://www.who.int/healthinfo/indicators/2015/metadata/en/)
 3. From Kees van Bochove (twitter, the hyve::ohdsi): Have a look at the way we used [schema.org](http://schema.org) to express structured metadata about observational studies [model](https://github.com/thehyve/ohdsi-schemas/blob/master/models/ohdsi_model/ohdsi_semantic_model.ttl) and example study
 4. On the usefulness of ontologies in epidemiology research and practice [[PMC ID](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)]
