@@ -1,5 +1,5 @@
 # The COVID-19 epidemiology and monitoring ontology 
-![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a common ontological model to make epidemiological quantitative data for monitoring the COVID-19 outbreak machine-readable and interoperable to facilitate its exchange, integration and analysis, to eventually support evidence-based rapid response. This ontology is built following knowledge-engineering standards and the OBO principles to bridge epidemiology into the semantic landscape of the biomedical sciences. See a detailed description of the model and the axiom patterns implemented in the following section.  
 
