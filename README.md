@@ -18,6 +18,15 @@ Note that **CEMO is currently under development** and subject to change.
 
 Please leave us a comment on the [issue tracker](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/issues) if you want to be involved.
 
+### I want to cite
+
+We are in the process to provide DOIs as well..
+
+
+* ISMB/ECCB 2021 - Bio-Ontologies track abstract [PDF](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/4157d0aa4fe5a283a9956acc4ad8264f2bd1418b/paper/ismb-bioontologies-2021/bio_ontologies_talk_abstract_2021.pdf)
+* BioHackrXiv [PDF](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/9168f4cbafbb62107b31d5a7b9a5dc5839de6416/paper/biohackrxiv/paper.pdf)
+
+
 
 ## Formal description
 
