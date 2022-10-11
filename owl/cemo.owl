@@ -1122,6 +1122,15 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:label xml:lang="en">average daily number of new infections generated per case (rt)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts">
@@ -1517,6 +1526,15 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:label xml:lang="en">length of icu stay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#line_of_infection -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
@@ -1640,6 +1658,15 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_international_travel">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">number of cases exposed by international travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_one_or_cluster_case -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_one_or_cluster_case">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:label xml:lang="en">number of cases exposed by local (one or cluster) case</rdfs:label>
     </owl:Class>
     
 
@@ -1918,11 +1945,31 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#points_of_interest -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <terms:description xml:lang="en">Number of points of interets within a geographical area.</terms:description>
+        <rdfs:label xml:lang="en">points of interest (pois)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#positive_contacts -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">positive contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <terms:description xml:lang="en">The proportion of reported cases that actually have the health-related event under surveillance.</terms:description>
+        <rdfs:label xml:lang="en">predictive value positive (pvp)</rdfs:label>
     </owl:Class>
     
 
@@ -2208,53 +2255,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">weighted prevalence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_(rt) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_(rt)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">average daily number of new infections generated per case (rt)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_(icu)_stay -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_(icu)_stay">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">length of icu stay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_(one_or_cluster)_case -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_(one_or_cluster)_case">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases exposed by local (one or cluster) case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#points_of_interest_(pois) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest_(pois)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Number of points of interets within a geographical area.</terms:description>
-        <rdfs:label xml:lang="en">points of interest (pois)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive_(pvp) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive_(pvp)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The proportion of reported cases that actually have the health-related event under surveillance.</terms:description>
-        <rdfs:label xml:lang="en">predictive value positive (pvp)</rdfs:label>
     </owl:Class>
     
 
@@ -2545,6 +2545,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cluster_size"/>
@@ -2564,6 +2565,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates"/>
@@ -2581,6 +2583,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
@@ -2593,9 +2596,6 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_(icu)_stay"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest_(pois)"/>
             <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
             <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
@@ -2628,6 +2628,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cluster_size"/>
@@ -2646,6 +2647,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates"/>
@@ -2661,6 +2663,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
@@ -2673,9 +2676,6 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_(icu)_stay"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest_(pois)"/>
             <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
             <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
@@ -2706,6 +2706,7 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates"/>
@@ -2736,7 +2737,6 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_(rt)"/>
             <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
             <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
