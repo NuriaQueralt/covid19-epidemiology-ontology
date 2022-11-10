@@ -1,0 +1,1225 @@
+format-version: 1.2
+data-version: releases/16-05-2021
+import: http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl
+ontology: cemo
+property_value: http://purl.org/dc/elements/1.1/contributor "Elena de la Calle" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0001-8149-5890 xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0001-8888-635X xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-5111-7263 xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-8691-772X xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0003-0351-6523 xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0003-1795-5930 xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Philippe Rocca-Serra" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-0169-8159
+property_value: http://purl.org/dc/terms/issued "16-05-2021" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/terms/title "COVID-19 Epidemiology and Monitoring Ontology (CEMO)" xsd:string
+property_value: IAO:0000119 "The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a model for describing, sharing and integrating of COVID-19 epidemiological data for outbreak monitoring and research." xsd:string
+property_value: owl:versionInfo "16-05-2021" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000002>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000140>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000449>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000008>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/COVOC_0010003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GSSO_006827>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000463>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000467>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000482>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000484>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000511>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0000519>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IDO_0001343>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCIT_C164332>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCIT_C164607>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCIT_C17734>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000052>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000064>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PATO_0001415>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000088>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000134>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000182>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000245>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000412>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000414>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/STATO_0000424>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#attack_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#cluster_size>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#daily_deaths>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#generation_interval>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#infectious_process>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#number_of_tests>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#opportunity>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#points_of_interest>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#positive_contacts>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#protection_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#serial_interval>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#suspected_cases>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#testing_rate>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence>))\nDeclaration(Class(<http://purl.unep.org/sdg/SDGIO_00020030>))\nDeclaration(Class(<http://www.ebi.ac.uk/efo/EFO_0004804>))\nDeclaration(Class(<http://www.onto-med.de/ontologies/gfo.owl#Chronoid>))\nDeclaration(Class(<http://www.onto-med.de/ontologies/gfo.owl#Time_boundary>))\nDeclaration(Class(<http://www.orpha.net/ORDO/Orphanet_409966>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/cemo.owl#caused_by>))\nDeclaration(ObjectProperty(<http://www.onto-med.de/ontologies/gfo.owl#projects_to>))\nDeclaration(ObjectProperty(<http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of>))\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000002> (basic reproduction number)\n\n\n# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000140> (infectious period)\n\nSubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000140> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/cemo.owl#caused_by> <http://purl.obolibrary.org/obo/cemo.owl#infectious_process>) ObjectExactCardinality(1 <http://www.onto-med.de/ontologies/gfo.owl#projects_to> <http://www.onto-med.de/ontologies/gfo.owl#Chronoid>)))\n\n# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000449> (quarantine period)\n\n\n# Class: <http://purl.obolibrary.org/obo/COVOC_0010003> (confirmed cases)\n\n\n# Class: <http://purl.obolibrary.org/obo/GSSO_006827> (fertility rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000463> (transmission probability)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000467> (susceptibility)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000482> (incidence proportion)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000484> (infection incidence rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000511> (infected population)\n\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0000519> (incubation period)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IDO_0000519> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/cemo.owl#caused_by> <http://purl.obolibrary.org/obo/cemo.owl#infectious_process>) ObjectExactCardinality(1 <http://www.onto-med.de/ontologies/gfo.owl#projects_to> <http://www.onto-med.de/ontologies/gfo.owl#Chronoid>)))\n\n# Class: <http://purl.obolibrary.org/obo/IDO_0001343> (latency period)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IDO_0001343> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/cemo.owl#caused_by> <http://purl.obolibrary.org/obo/cemo.owl#infectious_process>) ObjectExactCardinality(1 <http://www.onto-med.de/ontologies/gfo.owl#projects_to> <http://www.onto-med.de/ontologies/gfo.owl#Chronoid>)))\n\n# Class: <http://purl.obolibrary.org/obo/NCIT_C164332> (sequence identity of sample)\n\n\n# Class: <http://purl.obolibrary.org/obo/NCIT_C164607> (gene sequence identity)\n\n\n# Class: <http://purl.obolibrary.org/obo/NCIT_C17734> (at-risk population)\n\n\n# Class: <http://purl.obolibrary.org/obo/OBCS_0000052> (incidence proportion ratio)\n\n\n# Class: <http://purl.obolibrary.org/obo/OBCS_0000064> (period prevalence)\n\n\n# Class: <http://purl.obolibrary.org/obo/PATO_0001415> (morbidity)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000088> (study group population size)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000134> (diagnostic specificity)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000182> (odds ratio)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000245> (relative risk)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000412> (prevalence)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000414> (mortality rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/STATO_0000424> (risk difference)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> (attack rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt> (average daily number of new infections generated per case (rt))\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts> (average rate of infectious contacts)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> (case fatality rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#cluster_size> (cluster size)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage> (critical vaccination coverage)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates> (cumulative case rates)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases> (cumulative cases)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates> (cumulative death rates)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality> (cumulative excess mortality)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#daily_deaths> (daily deaths)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates> (device-specific rates and procedure-specific rates)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection> (duration of infection)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number> (effective reproduction number)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts> (exposed contacts)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#generation_interval> (generation interval)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions> (hospital-wide nosocomial infection rate per 100 admissions)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions> (hospital-wide patient infection rate per 100 admissions)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> (infection fatality rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case> (initial exposed case)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case> (initial infection case)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay> (length of icu stay)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates> (new daily case rates)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases> (new daily cases)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates> (new daily death rates)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions> (non-pharmaceutical interventions)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing> (number of cases by testing)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events> (number of cases with exposure events)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events> (number of cases with school exposure events)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events> (number of schools with exposure events)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens> (number of tested specimens)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#number_of_tests> (number of tests)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#opportunity> (opportunity)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility> (per capita mobility)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change> (percent daily change)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality> (percent increase in mortality)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected> (percentage of cases which are detected)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings> (percentage of laboratory findings)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed> (period from infectious to confirmed)\n\nSubClassOf(<http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/cemo.owl#caused_by> <http://purl.obolibrary.org/obo/cemo.owl#infectious_process>) ObjectExactCardinality(1 <http://www.onto-med.de/ontologies/gfo.owl#projects_to> <http://www.onto-med.de/ontologies/gfo.owl#Chronoid>)))\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#points_of_interest> (points of interest (pois))\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#positive_contacts> (positive contacts)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel> (proportion of cases attributed to travel)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#protection_rate> (protection rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters> (quantitative quality)\n\nSubClassOf(<http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/cemo.owl#caused_by> <http://purl.obolibrary.org/obo/cemo.owl#infectious_process>) ObjectExactCardinality(1 <http://www.onto-med.de/ontologies/gfo.owl#projects_to> <http://www.onto-med.de/ontologies/gfo.owl#Chronoid>)))\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing> (rate cases by testing)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts> (rate of infectious contacts)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections> (relative change in new infections)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate> (reproductive rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> (secondary attack rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#serial_interval> (serial interval)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#suspected_cases> (suspected cases)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#testing_rate> (testing rate)\n\n\n# Class: <http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence> (weighted prevalence)\n\n\n# Class: <http://purl.unep.org/sdg/SDGIO_00020030> (neonatal mortality rate)\n\n\n# Class: <http://www.ebi.ac.uk/efo/EFO_0004804> (birth rate)\n\n\n# Class: <http://www.onto-med.de/ontologies/gfo.owl#Time_boundary> (time boundary)\n\nEquivalentClasses(<http://www.onto-med.de/ontologies/gfo.owl#Time_boundary> ObjectSomeValuesFrom(<http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of> <http://purl.obolibrary.org/obo/BFO_0000008>))\n\n# Class: <http://www.orpha.net/ORDO/Orphanet_409966> (point prevalence)\n\n\n\nDisjointClasses(<http://purl.obolibrary.org/obo/APOLLO_SV_00000002> <http://purl.obolibrary.org/obo/APOLLO_SV_00000140> <http://purl.obolibrary.org/obo/APOLLO_SV_00000449> <http://purl.obolibrary.org/obo/COVOC_0010003> <http://purl.obolibrary.org/obo/GSSO_006827> <http://purl.obolibrary.org/obo/IDO_0000463> <http://purl.obolibrary.org/obo/IDO_0000467> <http://purl.obolibrary.org/obo/IDO_0000482> <http://purl.obolibrary.org/obo/IDO_0000484> <http://purl.obolibrary.org/obo/IDO_0000511> <http://purl.obolibrary.org/obo/IDO_0000519> <http://purl.obolibrary.org/obo/IDO_0001343> <http://purl.obolibrary.org/obo/NCIT_C164332> <http://purl.obolibrary.org/obo/NCIT_C164607> <http://purl.obolibrary.org/obo/NCIT_C17734> <http://purl.obolibrary.org/obo/OBCS_0000052> <http://purl.obolibrary.org/obo/OBCS_0000064> <http://purl.obolibrary.org/obo/PATO_0001415> <http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.obolibrary.org/obo/STATO_0000134> <http://purl.obolibrary.org/obo/STATO_0000182> <http://purl.obolibrary.org/obo/STATO_0000245> <http://purl.obolibrary.org/obo/STATO_0000412> <http://purl.obolibrary.org/obo/STATO_0000414> <http://purl.obolibrary.org/obo/STATO_0000424> <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt> <http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#cluster_size> <http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality> <http://purl.obolibrary.org/obo/cemo.owl#daily_deaths> <http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates> <http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection> <http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number> <http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts> <http://purl.obolibrary.org/obo/cemo.owl#generation_interval> <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions> <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions> <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case> <http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case> <http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tests> <http://purl.obolibrary.org/obo/cemo.owl#opportunity> <http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility> <http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change> <http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality> <http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected> <http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings> <http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed> <http://purl.obolibrary.org/obo/cemo.owl#points_of_interest> <http://purl.obolibrary.org/obo/cemo.owl#positive_contacts> <http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel> <http://purl.obolibrary.org/obo/cemo.owl#protection_rate> <http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections> <http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate> <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#serial_interval> <http://purl.obolibrary.org/obo/cemo.owl#suspected_cases> <http://purl.obolibrary.org/obo/cemo.owl#testing_rate> <http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence> <http://purl.unep.org/sdg/SDGIO_00020030> <http://www.ebi.ac.uk/efo/EFO_0004804> <http://www.orpha.net/ORDO/Orphanet_409966>)\nDisjointClasses(<http://purl.obolibrary.org/obo/APOLLO_SV_00000002> <http://purl.obolibrary.org/obo/APOLLO_SV_00000140> <http://purl.obolibrary.org/obo/APOLLO_SV_00000449> <http://purl.obolibrary.org/obo/COVOC_0010003> <http://purl.obolibrary.org/obo/GSSO_006827> <http://purl.obolibrary.org/obo/IDO_0000463> <http://purl.obolibrary.org/obo/IDO_0000467> <http://purl.obolibrary.org/obo/IDO_0000482> <http://purl.obolibrary.org/obo/IDO_0000484> <http://purl.obolibrary.org/obo/IDO_0000511> <http://purl.obolibrary.org/obo/IDO_0000519> <http://purl.obolibrary.org/obo/IDO_0001343> <http://purl.obolibrary.org/obo/NCIT_C17734> <http://purl.obolibrary.org/obo/OBCS_0000052> <http://purl.obolibrary.org/obo/OBCS_0000064> <http://purl.obolibrary.org/obo/PATO_0001415> <http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.obolibrary.org/obo/STATO_0000134> <http://purl.obolibrary.org/obo/STATO_0000182> <http://purl.obolibrary.org/obo/STATO_0000245> <http://purl.obolibrary.org/obo/STATO_0000412> <http://purl.obolibrary.org/obo/STATO_0000414> <http://purl.obolibrary.org/obo/STATO_0000424> <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt> <http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#cluster_size> <http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#daily_deaths> <http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates> <http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection> <http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number> <http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts> <http://purl.obolibrary.org/obo/cemo.owl#generation_interval> <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions> <http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions> <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case> <http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case> <http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tests> <http://purl.obolibrary.org/obo/cemo.owl#opportunity> <http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility> <http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change> <http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected> <http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed> <http://purl.obolibrary.org/obo/cemo.owl#points_of_interest> <http://purl.obolibrary.org/obo/cemo.owl#positive_contacts> <http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel> <http://purl.obolibrary.org/obo/cemo.owl#protection_rate> <http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections> <http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate> <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#serial_interval> <http://purl.obolibrary.org/obo/cemo.owl#suspected_cases> <http://purl.obolibrary.org/obo/cemo.owl#testing_rate> <http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence> <http://purl.unep.org/sdg/SDGIO_00020030> <http://www.ebi.ac.uk/efo/EFO_0004804> <http://www.orpha.net/ORDO/Orphanet_409966>)\nDisjointClasses(<http://purl.obolibrary.org/obo/APOLLO_SV_00000002> <http://purl.obolibrary.org/obo/APOLLO_SV_00000140> <http://purl.obolibrary.org/obo/APOLLO_SV_00000449> <http://purl.obolibrary.org/obo/GSSO_006827> <http://purl.obolibrary.org/obo/IDO_0000463> <http://purl.obolibrary.org/obo/IDO_0000467> <http://purl.obolibrary.org/obo/IDO_0000482> <http://purl.obolibrary.org/obo/IDO_0000484> <http://purl.obolibrary.org/obo/IDO_0000511> <http://purl.obolibrary.org/obo/IDO_0000519> <http://purl.obolibrary.org/obo/IDO_0001343> <http://purl.obolibrary.org/obo/NCIT_C17734> <http://purl.obolibrary.org/obo/OBCS_0000052> <http://purl.obolibrary.org/obo/OBCS_0000064> <http://purl.obolibrary.org/obo/PATO_0001415> <http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.obolibrary.org/obo/STATO_0000182> <http://purl.obolibrary.org/obo/STATO_0000245> <http://purl.obolibrary.org/obo/STATO_0000412> <http://purl.obolibrary.org/obo/STATO_0000414> <http://purl.obolibrary.org/obo/STATO_0000424> <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt> <http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases> <http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#daily_deaths> <http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection> <http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number> <http://purl.obolibrary.org/obo/cemo.owl#generation_interval> <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case> <http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases> <http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens> <http://purl.obolibrary.org/obo/cemo.owl#number_of_tests> <http://purl.obolibrary.org/obo/cemo.owl#opportunity> <http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change> <http://purl.obolibrary.org/obo/cemo.owl#protection_rate> <http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing> <http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts> <http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate> <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#serial_interval> <http://purl.obolibrary.org/obo/cemo.owl#testing_rate> <http://purl.unep.org/sdg/SDGIO_00020030> <http://www.ebi.ac.uk/efo/EFO_0004804> <http://www.orpha.net/ORDO/Orphanet_409966>)\nDisjointClasses(<http://purl.obolibrary.org/obo/APOLLO_SV_00000002> <http://purl.obolibrary.org/obo/APOLLO_SV_00000140> <http://purl.obolibrary.org/obo/APOLLO_SV_00000449> <http://purl.obolibrary.org/obo/GSSO_006827> <http://purl.obolibrary.org/obo/IDO_0000463> <http://purl.obolibrary.org/obo/IDO_0000467> <http://purl.obolibrary.org/obo/IDO_0000482> <http://purl.obolibrary.org/obo/IDO_0000484> <http://purl.obolibrary.org/obo/IDO_0000511> <http://purl.obolibrary.org/obo/IDO_0000519> <http://purl.obolibrary.org/obo/IDO_0001343> <http://purl.obolibrary.org/obo/NCIT_C17734> <http://purl.obolibrary.org/obo/OBCS_0000052> <http://purl.obolibrary.org/obo/OBCS_0000064> <http://purl.obolibrary.org/obo/PATO_0001415> <http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.obolibrary.org/obo/STATO_0000182> <http://purl.obolibrary.org/obo/STATO_0000245> <http://purl.obolibrary.org/obo/STATO_0000412> <http://purl.obolibrary.org/obo/STATO_0000414> <http://purl.obolibrary.org/obo/STATO_0000424> <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection> <http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number> <http://purl.obolibrary.org/obo/cemo.owl#generation_interval> <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case> <http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case> <http://purl.obolibrary.org/obo/cemo.owl#opportunity> <http://purl.obolibrary.org/obo/cemo.owl#protection_rate> <http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate> <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#serial_interval> <http://purl.unep.org/sdg/SDGIO_00020030> <http://www.ebi.ac.uk/efo/EFO_0004804> <http://www.orpha.net/ORDO/Orphanet_409966>)\nDisjointClasses(<http://purl.obolibrary.org/obo/GSSO_006827> <http://purl.obolibrary.org/obo/IDO_0000482> <http://purl.obolibrary.org/obo/IDO_0000484> <http://purl.obolibrary.org/obo/OBCS_0000052> <http://purl.obolibrary.org/obo/OBCS_0000064> <http://purl.obolibrary.org/obo/PATO_0001415> <http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.obolibrary.org/obo/STATO_0000182> <http://purl.obolibrary.org/obo/STATO_0000245> <http://purl.obolibrary.org/obo/STATO_0000412> <http://purl.obolibrary.org/obo/STATO_0000414> <http://purl.obolibrary.org/obo/STATO_0000424> <http://purl.obolibrary.org/obo/cemo.owl#attack_rate> <http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate> <http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate> <http://purl.unep.org/sdg/SDGIO_00020030> <http://www.ebi.ac.uk/efo/EFO_0004804> <http://www.orpha.net/ORDO/Orphanet_409966>)\n)
+
+[Term]
+id: APOLLO_SV:00000002
+name: basic reproduction number
+is_a: quantitative_parameters ! quantitative quality
+disjoint_from: APOLLO_SV:00000140 ! infectious period
+disjoint_from: APOLLO_SV:00000140 ! infectious period
+disjoint_from: APOLLO_SV:00000140 ! infectious period
+disjoint_from: APOLLO_SV:00000140 ! infectious period
+relationship: IAO:0000136 IDO:0000458 ! is about contagiousness
+relationship: SIO:000011 Time ! is attribute of time
+property_value: http://purl.org/dc/terms/description "The measure (R0) of the transmission potential of a disease such that the infection will be able to start spreading in a population or not. It is the average number of secondary infections produced by a typical case of an infection in a population where everyone is susceptible." xsd:string
+
+[Term]
+id: APOLLO_SV:00000140
+name: infectious period
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Length of time a person may transmit a microorganism; the duration of time a person is infectious" xsd:string
+
+[Term]
+id: APOLLO_SV:00000163
+name: recovered cases
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A population of organisms that have been infected, but are no longer able to transmit the disease and to acquire the infection again." xsd:string
+
+[Term]
+id: APOLLO_SV:00000296
+name: case
+is_a: IAO:0000030 ! information content entity
+is_a: interpretation ! interpretation
+
+[Term]
+id: APOLLO_SV:00000449
+name: quarantine period
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A period of time that must elapse before those exposed to or attacked by a contagious disease can be considered as incapable respectively of developing or transmitting the disease." xsd:string
+
+[Term]
+id: APOLLO_SV:00000497
+name: number of cases new this week
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A count of individuals in a population who meet the criteria of some case definition during some time interval." xsd:string
+
+[Term]
+id: APOLLO_SV:00000568
+name: total number of deaths
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A data item that is the output of some infection case count and that represents the number of infectious disease cases that ended in death." xsd:string
+
+[Term]
+id: APOLLO_SV:00000569
+name: total number of cases
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A data item that is the output of some infection case count." xsd:string
+
+[Term]
+id: BFO:0000015
+equivalent_to: Process ! process
+
+[Term]
+id: BFO:0000035
+equivalent_to: Event ! event
+
+[Term]
+id: BFO:0000182
+name: natural history
+is_a: interpretation ! interpretation
+
+[Term]
+id: COVOC:0010003
+name: confirmed cases
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Any person meeting the laboratory criteria for COVID-19." xsd:string
+
+[Term]
+id: Chronoid
+name: chronoid
+is_a: Temporal_region ! temporal region
+relationship: has_left_time_boundary BFO:0000001 {cardinality="1"}
+relationship: has_right_time_boundary BFO:0000001 {cardinality="1"}
+property_value: http://purl.org/dc/terms/description "Chronoids are entities sui generis.\n\nEvery chronoid has exactly two extremal and\ninfinitely many inner time boundaries which are\nequivalently called time-points." xsd:string
+
+[Term]
+id: Concrete
+name: concrete
+is_a: Individual ! individual
+
+[Term]
+id: EFO:0004804
+name: birth rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: Event
+name: event
+is_a: Occurrent ! occurrent
+
+[Term]
+id: GSSO:006827
+name: fertility rate
+is_a: quantitative_parameters ! quantitative quality
+disjoint_from: IDO:0000482 ! incidence proportion
+
+[Term]
+id: IAO:0000003
+name: measurement unit label
+is_a: IAO:0000009 ! datum label
+
+[Term]
+id: IAO:0000009
+name: datum label
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000027
+name: data item
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000030
+name: information content entity
+is_a: BFO:0000031
+
+[Term]
+id: IAO:0000109
+name: measurement datum
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: IAO:0020000
+name: identifier
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IDO:0000425
+name: virulence factor
+is_a: BFO:0000016
+is_a: interpretation ! interpretation
+
+[Term]
+id: IDO:0000458
+name: contagiousness
+is_a: BFO:0000016
+is_a: interpretation ! interpretation
+
+[Term]
+id: IDO:0000463
+name: transmission probability
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 APOLLO_SV:00000296 ! is about case
+relationship: IAO:0000136 IDO:0000458 ! is about contagiousness
+relationship: IAO:0000136 IDO:0000466 ! is about virulence
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+property_value: http://purl.org/dc/terms/description "Likelihood any contact passes on an exposure." xsd:string
+
+[Term]
+id: IDO:0000466
+name: virulence
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The ratio of the number of cases of the disease in relation to the total number of individuals infected; a quality that inheres in an infectious agent and is the degree to which realizations of the infectious disease caused by the infectious agent become severe or fatal." xsd:string
+
+[Term]
+id: IDO:0000467
+name: susceptibility
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Average susceptibility of the population; the share of the population capable of being infected." xsd:string
+
+[Term]
+id: IDO:0000482
+name: incidence proportion
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 IDO:0000586 ! is about infection
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+property_value: http://purl.org/dc/terms/description "Cumulative incidence of infection during a specified period of time." xsd:string
+
+[Term]
+id: IDO:0000484
+name: infection incidence rate
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 distribution ! is about distribution
+relationship: IAO:0000136 IDO:0000665 ! is about source of infection
+relationship: SIO:000011 Space ! is attribute of space
+property_value: http://purl.org/dc/terms/description "A quality that inheres in an organism population and is the infection incidence proportion per unit time." xsd:string
+property_value: http://purl.org/dc/terms/description "It is the number of new events that occurs in a defined time period in a geographical area." xsd:string
+
+[Term]
+id: IDO:0000509
+name: organism population
+is_a: BFO:0000027
+equivalent_to: OBI:0000181 ! population
+
+[Term]
+id: IDO:0000511
+name: infected population
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Quantity of members of a population that have an infection." xsd:string
+
+[Term]
+id: IDO:0000519
+name: incubation period
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The time that passes between being exposed to something that can cause disease (such as radiation or a virus) and having symptoms." xsd:string
+
+[Term]
+id: IDO:0000586
+name: infection
+is_a: BFO:0000040
+is_a: interpretation ! interpretation
+
+[Term]
+id: IDO:0000658
+name: host exposure to infectious agent
+is_a: exposure ! exposure
+
+[Term]
+id: IDO:0000665
+name: source of infection
+is_a: BFO:0000040
+is_a: interpretation ! interpretation
+
+[Term]
+id: IDO:0001343
+name: latency period
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Period of time starting with the establishing of an infection in a host and ending when the host becomes contagious." xsd:string
+
+[Term]
+id: Individual
+name: individual
+
+[Term]
+id: Left_time_boundary
+name: left time boundary
+is_a: Time_boundary ! time boundary
+intersection_of: Time_boundary ! time boundary
+intersection_of: left_boundary_of Chronoid ! chronoid
+
+[Term]
+id: NCBITaxon:2759
+name: eukaryota
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:9606
+name: person
+is_a: descriptive_epidemiology ! descriptive epidemiology
+is_a: NCBITaxon:2759 ! eukaryota
+
+[Term]
+id: NCIT:C164332
+name: sequence identity of sample
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: NCIT:C164607
+name: gene sequence identity
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: NCIT:C17734
+name: at-risk population
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Population groups with an increased likelihood of a disease or other health issue" xsd:string
+
+[Term]
+id: NCIT:C67448
+name: infectious dose
+is_a: interpretation ! interpretation
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The dose of pathogens received by the exposed individual." xsd:string
+
+[Term]
+id: OAE:0001869
+name: recovery rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The rate of population recovering from and infection." xsd:string
+
+[Term]
+id: OBCS:0000052
+name: incidence proportion ratio
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 IDO:0000458 ! is about contagiousness
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+property_value: http://purl.org/dc/terms/description "A data item that refers to the number of new events that have occurred in a specific time interval divided by the population at risk at the beginning of the time interval. The result gives the likelihood of developing an event in that time interval." xsd:string
+
+[Term]
+id: OBCS:0000064
+name: period prevalence
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "It measures the frequency of all current cases (Old & New) existing during a defined period of time (e.g. annual prevalence) expressed in relation to a defined population." xsd:string
+
+[Term]
+id: OBI:0000011
+name: planned process
+is_a: BFO:0000015
+
+[Term]
+id: OBI:0000067
+name: evaluant role
+is_a: BFO:0000023
+
+[Term]
+id: OBI:0000070
+name: assay
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000181
+name: population
+is_a: BFO:0000040
+is_a: interpretation ! interpretation
+
+[Term]
+id: OBI:0100026
+name: organism
+is_a: BFO:0000040
+
+[Term]
+id: OGMS:0000031
+name: disease
+is_a: BFO:0000016
+is_a: interpretation ! interpretation
+
+[Term]
+id: OGMS:0000063
+name: line of disease
+is_a: BFO:0000015
+is_a: descriptive_epidemiology ! descriptive epidemiology
+
+[Term]
+id: Occurrent
+name: occurrent
+is_a: Processual_Structure ! processual structure
+disjoint_from: Process ! process
+
+[Term]
+id: Orphanet:409966
+name: point prevalence
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 exposure ! is about exposure
+relationship: IAO:0000136 IDO:0000519 ! is about incubation period
+relationship: IAO:0000136 TRANS:0000000 ! is about transmission
+relationship: SIO:000011 Time ! is attribute of time
+property_value: http://purl.org/dc/terms/description "Type of prevalence where the data have been collected for one point of time." xsd:string
+
+[Term]
+id: PATO:0001415
+name: morbidity
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: Process
+name: process
+is_a: Processual_Structure ! processual structure
+relationship: projects_to BFO:0000008
+
+[Term]
+id: Processual_Structure
+name: processual structure
+is_a: Concrete ! concrete
+
+[Term]
+id: Right_time_boundary
+name: right time boundary
+is_a: Time_boundary ! time boundary
+intersection_of: Time_boundary ! time boundary
+intersection_of: right_boundary_of Chronoid ! chronoid
+
+[Term]
+id: SDGIO:00020030
+name: neonatal mortality rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: STATO:0000088
+name: study group population size
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed." xsd:string
+property_value: http://purl.org/dc/terms/description "Statistical sample size is a count evaluating the number of individual experimental units." xsd:string
+
+[Term]
+id: STATO:0000134
+name: diagnostic specificity
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The probability that a test will produce a true negative result when used on non-effected subjects as compared to a reference or \"gold standard\". The specificity of a test can be determined by calculating: number of true negative results divided by the sum of true negative results plus number of false positive results." xsd:string
+
+[Term]
+id: STATO:0000182
+name: odds ratio
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 exposure ! is about exposure
+relationship: IAO:0000136 risk_factor ! is about risk factor
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+
+[Term]
+id: STATO:0000196
+name: confidence interval
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: STATO:0000203
+name: cohort
+is_a: interpretation ! interpretation
+is_a: OBI:0000181 ! population
+
+[Term]
+id: STATO:0000233
+name: sensitivity
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Ability to identify every single case of disease." xsd:string
+
+[Term]
+id: STATO:0000245
+name: relative risk
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 risk_factor ! is about risk factor
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+relationship: SIO:000011 Time ! is attribute of time
+property_value: http://purl.org/dc/terms/description "Compares the risk of a health event (disease, injury, risk factor, or death) among one group with the risk among another group. Also called risk ratio." xsd:string
+
+[Term]
+id: STATO:0000412
+name: prevalence
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Ratio formed by the total number of all individuals who have an attribute or disease at a particular time or during a particular period divided by the populations at risk of having the attribute or disease at this point of time or midway through the period." xsd:string
+
+[Term]
+id: STATO:0000414
+name: mortality rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: STATO:0000424
+name: risk difference
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: Space
+name: space
+is_a: descriptive_epidemiology ! descriptive epidemiology
+is_a: Space_time ! space time entity
+disjoint_from: Time ! time
+
+[Term]
+id: Space_time
+name: space time entity
+is_a: Individual ! individual
+
+[Term]
+id: TRANS:0000000
+name: transmission
+is_a: BFO:0000015
+is_a: interpretation ! interpretation
+
+[Term]
+id: Temporal_region
+name: temporal region
+is_a: Time ! time
+disjoint_from: Time_boundary ! time boundary
+property_value: http://purl.org/dc/terms/description "Time Regions are defined as the mereological sum of chronoids,\ni.e. time regions may consist of non-connected intervals of time." xsd:string
+
+[Term]
+id: Time
+name: time
+is_a: descriptive_epidemiology ! descriptive epidemiology
+is_a: Space_time ! space time entity
+property_value: http://purl.org/dc/terms/description "The time model of GFO is based on Brentano and the glass continuum of Allen&Hayes." xsd:string
+
+[Term]
+id: Time_boundary
+name: time boundary
+is_a: Time ! time
+union_of: Left_time_boundary ! left time boundary
+union_of: Right_time_boundary ! right time boundary
+property_value: http://purl.org/dc/terms/description "Time boundaries depend on a chronoids and can coincide.\n\nLeft time boundaries, if viewed from the perspective of bounding a specific chronoid, are those which are earlier than any inner or right time boundary of that chronoid. On the other hand, within a pair of coincident time boundaries, a left time boundary is later than the right time boundary in that pair.\n\n[FL, 2008-02-27]" xsd:string
+
+[Term]
+id: VIDO:0001331
+name: viral load
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Numerical expression of the quantity of virus in a given volume of fluid." xsd:string
+
+[Term]
+id: VO:0000247
+name: vaccine efficacy
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Percentage reduction in disease incidence attributable to vaccination." xsd:string
+
+[Term]
+id: attack_rate
+name: attack rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Number of new cases of a specified disease during a specified time interval per 100 populations at risk during the same time interval." xsd:string
+
+[Term]
+id: average_daily_number_of_new_infections_generated_per_case_rt
+name: average daily number of new infections generated per case (rt)
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: average_rate_of_infectious_contacts
+name: average rate of infectious contacts
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: case_fatality_rate
+name: case fatality rate
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 APOLLO_SV:00000296 ! is about case
+relationship: IAO:0000136 IDO:0000458 ! is about contagiousness
+relationship: IAO:0000136 IDO:0000466 ! is about virulence
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+property_value: http://purl.org/dc/terms/description "Represents the killing power of a disease, as the ratio of deaths to cases. The time interval is not specified. Not to be confused with mortality rate." xsd:string
+
+[Term]
+id: cases_by_exposure_in_a_healthcare_setting
+name: cases by exposure in a healthcare setting
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: cluster_size
+name: cluster size
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Number of cases of a disease or another health-related condition, closely grouped in time and place." xsd:string
+
+[Term]
+id: complication_rate
+name: complication rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Proportion of confirmed cases that suffered complications." xsd:string
+
+[Term]
+id: critical_vaccination_coverage
+name: critical vaccination coverage
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Vaccination effort needed to eliminate an infection from a population." xsd:string
+
+[Term]
+id: cumulative_case_rates
+name: cumulative case rates
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: cumulative_cases
+name: cumulative cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: cumulative_death_rates
+name: cumulative death rates
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: cumulative_excess_mortality
+name: cumulative excess mortality
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: daily_cases
+name: daily cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: daily_deaths
+name: daily deaths
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: descriptive_epidemiology
+name: descriptive epidemiology
+is_a: epidemiological_core_concepts ! epidemiological core concepts
+
+[Term]
+id: device-specific_rates_and_procedure-specific_rates
+name: device-specific rates and procedure-specific rates
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The risk of infection is related to the extrinsic risk factors (use of devices such as ventilator, central line intravascular catheter, urinary catheter, surgical operation)." xsd:string
+
+[Term]
+id: distribution
+name: distribution
+is_a: interpretation ! interpretation
+
+[Term]
+id: duration_of_infection
+name: duration of infection
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: effective_reproduction_number
+name: effective reproduction number
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Not all contacts will become infected and the average number of secondary cases per infectious case will be lower than the basic reproduction number. The effective reproductive number (R) is the average number of secondary cases per infectious case in a population made up of both susceptible and non-susceptible hosts." xsd:string
+
+[Term]
+id: environmental_risk_factor
+name: environmental risk factor
+is_a: risk_factor ! risk factor
+
+[Term]
+id: epidemic_doubling_time
+name: epidemic doubling time
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Time for a given quantity to double in size or number at a constant growth rate." xsd:string
+
+[Term]
+id: epidemiological_core_concepts
+name: epidemiological core concepts
+is_a: BFO:0000001
+
+[Term]
+id: etiology
+name: etiology
+is_a: interpretation ! interpretation
+
+[Term]
+id: exposed_contacts
+name: exposed contacts
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: exposed_individuals
+name: exposed individuals
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: exposition_interval
+name: exposition interval
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: exposure
+name: exposure
+is_a: BFO:0000015
+is_a: interpretation ! interpretation
+
+[Term]
+id: generation_interval
+name: generation interval
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The time lag from a primary infection to a secondary infection caused by the primary infection." xsd:string
+
+[Term]
+id: growth_rate
+name: growth rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: health_status_indicators
+is_a: other_indicators ! other indicators
+disjoint_from: health_systems_indicators
+
+[Term]
+id: health_systems_indicators
+is_a: other_indicators ! other indicators
+
+[Term]
+id: herd_immunity_threshold
+name: herd immunity threshold
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The proportion of a population that need to be immune in order for an infectious disease to become stable in that community." xsd:string
+
+[Term]
+id: hospital-wide_nosocomial_infection_rate_per_100_admissions
+name: hospital-wide nosocomial infection rate per 100 admissions
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "A hospital-wide nosocomial infection rate/100 admissions for a given period (month, quarter, or year) is commonly calculated. In this rate, a patient who has two infections is actually counted twice." xsd:string
+
+[Term]
+id: hospital-wide_patient_infection_rate_per_100_admissions
+name: hospital-wide patient infection rate per 100 admissions
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Hospital-wide patient infection rate/100 admissions are used to avoid the pitfall of multiple infections in the same patient. This rate may be calculated for a given period: month, quarter, and year. In this rate, a patient with two infections is counted only once." xsd:string
+
+[Term]
+id: hospitalization_rate
+name: hospitalization rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Proportion of confirmed cases that were hospitalized." xsd:string
+
+[Term]
+id: host_risk_factor
+name: host risk factor
+is_a: risk_factor ! risk factor
+
+[Term]
+id: incidence_of_sever_outcomes
+name: incidence of sever outcomes
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: infection_fatality_rate
+name: infection fatality rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects." xsd:string
+
+[Term]
+id: infectious_process
+name: infectious process
+is_a: BFO:0000015
+
+[Term]
+id: initial_exposed_case
+name: initial exposed case
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: initial_infection_case
+name: initial infection case
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: interpretation
+name: interpretation
+is_a: epidemiological_core_concepts ! epidemiological core concepts
+
+[Term]
+id: length_of_intensive_care_unit_stay
+name: length of icu stay
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: line_of_infection
+name: line of infection
+is_a: descriptive_epidemiology ! descriptive epidemiology
+
+[Term]
+id: male-to-female_ratio
+name: male-to-female ratio
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Male-to-female ratio of confirmed case-patients" xsd:string
+
+[Term]
+id: median_age_of_cases
+name: median age of cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: median_age_of_cases_died
+name: median age of cases died
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: median_age_of_cases_hospitalized
+name: median age of cases hospitalized
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: new_daily_case_rates
+name: new daily case rates
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: new_daily_cases
+name: new daily cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: new_daily_death_rates
+name: new daily death rates
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: non-pharmaceutical_interventions
+name: non-pharmaceutical interventions
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_active_cases
+name: number of active cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_by_testing
+name: number of cases by testing
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_currently_in_hospital
+name: number of cases currently in hospital
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_currently_in_icu
+name: number of cases currently in icu
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_exposed_by_international_travel
+name: number of cases exposed by international travel
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_exposed_by_local_one_or_cluster_case
+name: number of cases exposed by local (one or cluster) case
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_exposed_by_local_unknown_exposure
+name: number of cases exposed by local unknown exposure
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_hospitalized_this_week
+name: number of cases hospitalized this week
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_removed_from_isolation_this_week
+name: number of cases removed from isolation this week
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_with_exposure_events
+name: number of cases with exposure events
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_with_mild_symptoms
+name: number of cases with mild symptoms
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_with_missing_exposure_information
+name: number of cases with missing exposure information
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_with_no_symptoms
+name: number of cases with no symptoms
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_cases_with_school_exposure_events
+name: number of cases with school exposure events
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_deaths_new_this_week
+name: number of deaths new this week
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_schools_with_exposure_events
+name: number of schools with exposure events
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_tested_specimens
+name: number of tested specimens
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: number_of_tests
+name: number of tests
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: odds_ratio_for_being_an_infected_contact
+name: odds ratio for being an infected contact
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: onset_of_symptom_to_hospitalization
+name: onset of symptom to hospitalization
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: opportunity
+name: opportunity
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Number of daily contacts the infected person has; average number of opportunities a person has to spread the infection each day the person is infectious." xsd:string
+
+[Term]
+id: other_indicators
+name: other indicators
+is_a: BFO:0000001
+
+[Term]
+id: per_capita_mobility
+name: per capita mobility
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percent_daily_change
+name: percent daily change
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Indicates epidemic growth rate as the median percent change in daily numbers of new cases." xsd:string
+
+[Term]
+id: percent_increase_in_mortality
+name: percent increase in mortality
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_cases_died
+name: percentage cases died
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_cases_female_sex
+name: percentage cases female sex
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_cases_removed
+name: percentage cases removed
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_of_asymptomatic_of_confirmed_cases
+name: percentage of asymptomatic of confirmed cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_of_cases
+name: percentage of cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_of_cases_icu
+name: percentage of cases icu
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_of_cases_which_are_detected
+name: percentage of cases which are detected
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: percentage_of_laboratory_findings
+name: percentage of laboratory findings
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: period_from_infectious_to_confirmed
+name: period from infectious to confirmed
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: points_of_interest
+name: points of interest (pois)
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Number of points of interets within a geographical area." xsd:string
+
+[Term]
+id: positive_contacts
+name: positive contacts
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: predictive_value_positive
+name: predictive value positive (pvp)
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The proportion of reported cases that actually have the health-related event under surveillance." xsd:string
+
+[Term]
+id: prevalence_of_comorbidities_cases
+name: prevalence of comorbidities cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: prevalence_of_sars-cov-2_seropositivity
+name: prevalence of sars-cov-2 seropositivity
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: proportion_of_cases_attributed_to_travel
+name: proportion of cases attributed to travel
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: protection_rate
+name: protection rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: quantitative_parameters
+name: quantitative quality
+is_a: BFO:0000019
+relationship: IAO:0000136 APOLLO_SV:00000296 ! is about case
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+
+[Term]
+id: quarantined_cases
+name: quarantined cases
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Confirmed and infected cases under quarantine." xsd:string
+
+[Term]
+id: rate_cases_by_testing
+name: rate cases by testing
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Percent of positive specimens." xsd:string
+
+[Term]
+id: rate_of_cases_with_at_least_one_comorbidity
+name: rate of cases with at least one comorbidity
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: rate_of_community_transmission
+name: rate of community transmission
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: rate_of_infectious_contacts
+name: rate of infectious contacts
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: relative_change_in_new_infections
+name: relative change in new infections
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: reproductive_rate
+name: reproductive rate
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "Average number of cases that will result from an index case." xsd:string
+
+[Term]
+id: risk_factor
+name: risk factor
+is_a: interpretation ! interpretation
+
+[Term]
+id: risk_factors_indicators
+is_a: health_status_indicators
+disjoint_from: service_coverage_indicators
+
+[Term]
+id: secondary_attack_rate
+name: secondary attack rate
+is_a: quantitative_parameters ! quantitative quality
+relationship: IAO:0000136 APOLLO_SV:00000296 ! is about case
+relationship: IAO:0000136 IDO:0000458 ! is about contagiousness
+relationship: IAO:0000136 IDO:0000466 ! is about virulence
+relationship: SIO:000011 NCBITaxon:9606 ! is attribute of person
+property_value: http://purl.org/dc/terms/description "Number of exposed persons developing the disease within the range of incubation period following exposure to a primary case." xsd:string
+
+[Term]
+id: serial_interval
+name: serial interval
+is_a: quantitative_parameters ! quantitative quality
+property_value: http://purl.org/dc/terms/description "The time interval between symptom onset in a primary case and a secondary case, which is considered a reasonable approximation of the generation interval and is more practical to observe" xsd:string
+
+[Term]
+id: service_coverage_indicators
+is_a: health_status_indicators
+
+[Term]
+id: susceptible_individuals
+name: susceptible individuals
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: suspected_cases
+name: suspected cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: testing_rate
+name: testing rate
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: total_number_of_cases_ever_hospitalized
+name: total number of cases ever hospitalized
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: total_number_of_cases_removed_from_isolation
+name: total number of cases removed from isolation
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: undetected_cases
+name: undetected cases
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: untraceable_contacts
+name: untraceable contacts
+is_a: quantitative_parameters ! quantitative quality
+
+[Term]
+id: weighted_prevalence
+name: weighted prevalence
+is_a: quantitative_parameters ! quantitative quality
+
+[Typedef]
+id: BFO:0000054
+name: realized in
+domain: BFO:0000017
+range: BFO:0000015
+
+[Typedef]
+id: IAO:0000136
+name: is about
+
+[Typedef]
+id: IAO:0000219
+name: denotes
+is_a: IAO:0000136 ! is about
+
+[Typedef]
+id: RO:0000057
+name: has participant
+
+[Typedef]
+id: RO:0000059
+name: concretizes
+domain: BFO:0000020
+range: BFO:0000031
+
+[Typedef]
+id: RO:0000086
+name: has quality
+range: BFO:0000019
+
+[Typedef]
+id: RO:0000087
+name: has role
+domain: BFO:0000004
+range: BFO:0000023
+
+[Typedef]
+id: RO:0002234
+name: has output
+domain: BFO:0000015
+range: IAO:0000030 ! information content entity
+
+[Typedef]
+id: RO:0002351
+name: has member
+domain: OBI:0000181 ! population
+range: NCBITaxon:9606 ! person
+
+[Typedef]
+id: RO:0002463
+name: target participant in
+
+[Typedef]
+id: RO:0002536
+name: has unit
+
+[Typedef]
+id: SIO:000011
+name: is attribute of
+
+[Typedef]
+id: caused_by
+name: caused by
+domain: BFO:0000015
+range: BFO:0000015
+
+[Typedef]
+id: has_left_time_boundary
+name: has left time boundary
+range: Left_time_boundary ! left time boundary
+is_functional: true
+is_inverse_functional: true
+inverse_of: left_boundary_of ! left boundary of
+
+[Typedef]
+id: has_right_time_boundary
+name: has right time boundary
+range: Right_time_boundary ! right time boundary
+is_functional: true
+is_inverse_functional: true
+inverse_of: right_boundary_of ! right boundary of
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/has_confidence_level
+name: has confidence level
+range: STATO:0000196 ! confidence interval
+
+[Typedef]
+id: left_boundary_of
+name: left boundary of
+is_functional: true
+is_inverse_functional: true
+is_a: time_boundary_of ! time boundary of
+
+[Typedef]
+id: projects_to
+name: projects to
+property_value: http://purl.org/dc/terms/description "Links an entity to its temporal extension.\nEntities which are in time are related to the corresponding temporal regions by projects to. Moreover, entities related to others which are in time may likewise project to temporal regions.\n[FL, 2008-02-28]" xsd:string
+range: Time ! time
+is_functional: true
+
+[Typedef]
+id: right_boundary_of
+name: right boundary of
+is_functional: true
+is_inverse_functional: true
+is_a: time_boundary_of ! time boundary of
+
+[Typedef]
+id: time_boundary_of
+name: time boundary of
+domain: Time_boundary ! time boundary
+range: Temporal_region ! temporal region
+is_functional: true
+
