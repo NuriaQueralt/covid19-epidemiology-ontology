@@ -59,12 +59,12 @@ We developed a conceptual model for quantitative epidemiological data. This mode
 
 In an outbreak, descriptive epidemiology or the calculation of different measures of frequency that depend on *person*, *time* and *space* parameters, where entities under study are populations or patients, is first applied to characterize and monitor it. A graphical representation of the model: 
 
-<a alt="Epidemiology Monitoring model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model.png" height="50%" weight="50%"></a>
+<a alt="Epidemiology Monitoring model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model_v2.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/covid19_epidemiology_model_v2.png" height="50%" weight="50%"></a>
 
 ##### Use case: analytical epidemiology
 In analytical epidemiology are frequent observational studies to establish causal-effect relations, where the disease-risk factors association is evaluated. A graphical representation of the model extended for this use:
 
-<a alt="Epidemiology Monitoring cohort model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model.png" height="50%" weight="50%"></a>
+<a alt="Epidemiology Monitoring cohort model" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model_v2.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/cohort_model_v2.png" height="50%" weight="50%"></a>
 
 
 
@@ -73,9 +73,8 @@ In analytical epidemiology are frequent observational studies to establish causa
 We implemented axiom patterns to describe epidemiological quantitative parameters and timelines domain concepts. For quantitative parameters we added the following axiomatization (in OWL Manchester Syntax):
 
 ```owl
-"epidemiology quantitative quality" SubClassOf 
-                                             [(*is_attribute_of* some "entity") 
-                                             and (*is_about* some "epi core concept")]
+"epidemiology quantitative quality" SubClassOf (*is_attribute_of* some "entity") 
+                                    and (*is_about* some "epi core concept")
 ```
 
 See what `entity` and `epi core concept` mean:
