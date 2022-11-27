@@ -98,7 +98,7 @@ For timelines we re-used GFO using the 'chronoid' concept and the GFO-based 'mor
 ```owl
 "incubation period" SubClassOf "process"
                     and (*caused_by* only "infectious process")
-                    and (*has_participant* only "person"
+                    and (*has_participant* only "person")
                     and (*projects_to* exactly 1 "chronoid")
 ```
  
