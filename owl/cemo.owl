@@ -653,8 +653,9 @@ Entities which are in time are related to the corresponding temporal regions by 
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">incidence rate</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">infection rate</obo:IAO_0000118>
         <terms:description xml:lang="en">A quality that inheres in an organism population and is the infection incidence proportion per unit time.</terms:description>
-        <terms:description xml:lang="en">It is the number of new events that occurs in a defined time period in a geographical area.</terms:description>
         <rdfs:label xml:lang="en">infection incidence rate</rdfs:label>
     </owl:Class>
     
@@ -734,6 +735,7 @@ Entities which are in time are related to the corresponding temporal regions by 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000665">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <obo:IAO_0000118 xml:lang="en">infection source</obo:IAO_0000118>
         <rdfs:label xml:lang="en">source of infection</rdfs:label>
     </owl:Class>
     
@@ -950,7 +952,8 @@ Entities which are in time are related to the corresponding temporal regions by 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed.</terms:description>
+        <obo:IAO_0000118 xml:lang="en">population size</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sample size</obo:IAO_0000118>
         <terms:description xml:lang="en">Statistical sample size is a count evaluating the number of individual experimental units.</terms:description>
         <rdfs:label xml:lang="en">study group population size</rdfs:label>
     </owl:Class>
