@@ -481,15 +481,6 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
-        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
@@ -1085,6 +1076,15 @@ Entities which are in time are related to the corresponding temporal regions by 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
     </owl:Class>
     
 
