@@ -899,6 +899,15 @@ Entities which are in time are related to the corresponding temporal regions by 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">cohort role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
