@@ -1535,6 +1535,7 @@ Entities which are in time are related to the corresponding temporal regions by 
     <!-- http://purl.obolibrary.org/obo/cemo.owl#line_of_infection -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
         <rdfs:label xml:lang="en">line of infection</rdfs:label>
     </owl:Class>
