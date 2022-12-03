@@ -378,9 +378,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000296 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000296">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">case</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED case</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -443,10 +442,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">natural history</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
     
 
 
@@ -517,9 +513,10 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000425 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000425">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">virulence factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition"/>
+        <obo:IAO_0000118 xml:lang="en">virulence factor</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">virulence factor disposition</rdfs:label>
     </owl:Class>
     
 
@@ -562,6 +559,15 @@
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Likelihood any contact passes on an exposure.</terms:description>
         <rdfs:label xml:lang="en">transmission probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">infectivity</rdfs:label>
     </owl:Class>
     
 
@@ -645,6 +651,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">organism population</rdfs:label>
     </owl:Class>
     
@@ -797,6 +804,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18770 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18770">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000118 xml:lang="en">geographic location</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Epidemiology, Geographic Location</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C67448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67448">
@@ -907,6 +924,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <rdfs:label xml:lang="en">clinical history</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
@@ -922,7 +949,29 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:label xml:lang="en">line of disease</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">timecourse of disease</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">timeline of disease</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">disease course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">clinical data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
+        <obo:IAO_0000118 xml:lang="en">geographic distribution</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">spatial pattern</rdfs:label>
     </owl:Class>
     
 
@@ -1281,11 +1330,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#diseased_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#diseased_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#distribution -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#distribution">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">distribution</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED distribution</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1340,8 +1397,8 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#etiology -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#etiology">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
-        <rdfs:label xml:lang="en">etiology</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED etiology</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1468,11 +1525,60 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#immune_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#immune_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">incidence of sever outcomes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000118 xml:lang="en">case</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_antigen_capture_tes -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_antigen_capture_tes">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_serology -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_serology">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_disgnosed_by_PCR -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_disgnosed_by_PCR">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
     </owl:Class>
     
 
@@ -1483,6 +1589,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects.</terms:description>
         <rdfs:label xml:lang="en">infection fatality rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#infectious_agent_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infectious_agent_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
     </owl:Class>
     
 
@@ -1537,7 +1651,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:label xml:lang="en">line of infection</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">timecourse of infection</rdfs:label>
     </owl:Class>
     
 
@@ -1814,6 +1929,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#patient -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#patient">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility">
@@ -2008,6 +2131,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection_process -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_person -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters">
@@ -2098,6 +2245,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#recovered_person -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#recovered_person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections">
@@ -2120,6 +2275,7 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#risk_factor -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#risk_factor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">risk factor</rdfs:label>
     </owl:Class>
@@ -2194,6 +2350,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#susceptible_person -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#susceptible_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/cemo.owl#suspected_cases -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases">
@@ -2244,6 +2416,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#untraceable_contacts">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">untraceable contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000118 xml:lang="en">virus factor</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2406,10 +2587,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Space -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Space">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space_time"/>
-        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-        <rdfs:label xml:lang="en">space</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED space</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
