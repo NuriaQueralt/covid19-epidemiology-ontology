@@ -1314,8 +1314,8 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts"/>
-        <rdfs:label xml:lang="en">descriptive epidemiology</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED descriptive epidemiology</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1388,8 +1388,8 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">epidemiological core concepts</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED epidemiological core concepts</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1631,8 +1631,8 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#interpretation -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#interpretation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts"/>
-        <rdfs:label xml:lang="en">interpretation</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED interpretation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
