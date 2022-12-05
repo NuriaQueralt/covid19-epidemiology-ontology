@@ -817,7 +817,6 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67448">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">The dose of pathogens received by the exposed individual.</terms:description>
         <rdfs:label xml:lang="en">infectious dose</rdfs:label>
