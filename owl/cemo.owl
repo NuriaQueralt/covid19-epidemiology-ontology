@@ -227,10 +227,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_left_time_boundary">
         <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#left_boundary_of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary"/>
-        <rdfs:label xml:lang="en">has left time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED has left time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -239,10 +237,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_right_time_boundary">
         <owl:inverseOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#right_boundary_of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary"/>
-        <rdfs:label xml:lang="en">has right time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED has right time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -250,10 +246,8 @@
     <!-- http://www.onto-med.de/ontologies/gfo.owl#left_boundary_of -->
 
     <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#left_boundary_of">
-        <rdfs:subPropertyOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:label xml:lang="en">left boundary of</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED left boundary of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -261,10 +255,8 @@
     <!-- http://www.onto-med.de/ontologies/gfo.owl#right_boundary_of -->
 
     <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#right_boundary_of">
-        <rdfs:subPropertyOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:label xml:lang="en">right boundary of</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED right boundary of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -272,10 +264,8 @@
     <!-- http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of -->
 
     <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <rdfs:range rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
-        <rdfs:label xml:lang="en">time boundary of</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED time boundary of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -316,18 +306,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">The measure (R0) of the transmission potential of a disease such that the infection will be able to start spreading in a population or not. It is the average number of secondary infections produced by a typical case of an infection in a population where everyone is susceptible.</terms:description>
         <rdfs:label xml:lang="en">basic reproduction number</rdfs:label>
@@ -354,7 +336,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -421,22 +403,6 @@
         <terms:description xml:lang="en">A data item that is the output of some infection case count.</terms:description>
         <rdfs:label xml:lang="en">total number of cases</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
-        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
-        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Event"/>
-    </rdf:Description>
     
 
 
@@ -536,26 +502,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000463">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Likelihood any contact passes on an exposure.</terms:description>
         <rdfs:label xml:lang="en">transmission probability</rdfs:label>
@@ -597,18 +547,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000482">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000586"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Cumulative incidence of infection during a specified period of time.</terms:description>
         <rdfs:label xml:lang="en">incidence proportion</rdfs:label>
@@ -621,22 +563,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000484">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000665"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#distribution"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">incidence rate</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">infection rate</obo:IAO_0000118>
@@ -686,7 +616,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -746,7 +676,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -817,7 +747,6 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67448">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">The dose of pathogens received by the exposed individual.</terms:description>
         <rdfs:label xml:lang="en">infectious dose</rdfs:label>
@@ -840,18 +769,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">A data item that refers to the number of new events that have occurred in a specific time interval divided by the population at risk at the beginning of the time interval. The result gives the likelihood of developing an event in that time interval.</terms:description>
         <rdfs:label xml:lang="en">incidence proportion ratio</rdfs:label>
@@ -948,7 +869,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">timecourse of disease</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">timeline of disease</obo:IAO_0000118>
         <rdfs:label xml:lang="en">disease course</rdfs:label>
@@ -1012,22 +952,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">odds ratio</rdfs:label>
     </owl:Class>
@@ -1070,10 +998,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
-                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -1123,7 +1047,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">transmission</rdfs:label>
     </owl:Class>
     
@@ -1191,26 +1114,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Represents the killing power of a disease, as the ratio of deaths to cases. The time interval is not specified. Not to be confused with mortality rate.</terms:description>
         <rdfs:label xml:lang="en">case fatality rate</rdfs:label>
@@ -1434,7 +1341,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposure">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">exposure</rdfs:label>
     </owl:Class>
     
@@ -1650,7 +1556,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
         <rdfs:label xml:lang="en">timecourse of infection</rdfs:label>
     </owl:Class>
@@ -2056,7 +1981,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2159,40 +2084,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">quantitative quality</rdfs:label>
     </owl:Class>
     
@@ -2296,26 +2187,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000296"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000458"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000466"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Number of exposed persons developing the disease within the range of incubation period following exposure to a primary case.</terms:description>
         <rdfs:label xml:lang="en">secondary attack rate</rdfs:label>
@@ -2459,27 +2334,8 @@
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Chronoid -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Chronoid">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_left_time_boundary"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_right_time_boundary"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description xml:lang="en">Chronoids are entities sui generis.
-
-Every chronoid has exactly two extremal and
-infinitely many inner time boundaries which are
-equivalently called time-points.</terms:description>
-        <rdfs:label xml:lang="en">chronoid</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED chronoid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2487,8 +2343,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Concrete -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Concrete">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
-        <rdfs:label xml:lang="en">concrete</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED concrete</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2496,8 +2352,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Event -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Event">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Occurrent"/>
-        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED event</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2505,7 +2361,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Individual -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Individual">
-        <rdfs:label xml:lang="en">individual</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED individual</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2513,19 +2370,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#left_boundary_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <rdfs:label xml:lang="en">left time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED left time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2533,9 +2379,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Occurrent -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Occurrent">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
-        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
-        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED occurrent</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2543,14 +2388,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Process -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Process">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">process</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2558,8 +2397,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concrete"/>
-        <rdfs:label xml:lang="en">processual structure</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED processual structure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2567,19 +2406,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#right_boundary_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <rdfs:label xml:lang="en">right time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED right time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2596,8 +2424,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Space_time -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Space_time">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
-        <rdfs:label xml:lang="en">space time entity</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED space time entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2605,11 +2433,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Temporal_region -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <terms:description xml:lang="en">Time Regions are defined as the mereological sum of chronoids,
-i.e. time regions may consist of non-connected intervals of time.</terms:description>
-        <rdfs:label xml:lang="en">temporal region</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED temporal region</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2617,10 +2442,8 @@ i.e. time regions may consist of non-connected intervals of time.</terms:descrip
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Time -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space_time"/>
-        <terms:description xml:lang="en">The time model of GFO is based on Brentano and the glass continuum of Allen&amp;Hayes.</terms:description>
-        <rdfs:label xml:lang="en">time</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED time</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2628,27 +2451,8 @@ i.e. time regions may consist of non-connected intervals of time.</terms:descrip
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary"/>
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-        <terms:description xml:lang="en">Time boundaries depend on a chronoids and can coincide.
-
-Left time boundaries, if viewed from the perspective of bounding a specific chronoid, are those which are earlier than any inner or right time boundary of that chronoid. On the other hand, within a pair of coincident time boundaries, a left time boundary is later than the right time boundary in that pair.
-
-[FL, 2008-02-27]</terms:description>
-        <rdfs:label xml:lang="en">time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2658,333 +2462,14 @@ Left time boundaries, if viewed from the perspective of bounding a specific chro
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_409966">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000519"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/TRANS_0000000"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Type of prevalence where the data have been collected for one point of time.</terms:description>
         <rdfs:label xml:lang="en">point prevalence</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000449"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COVOC_0010003"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_006827"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000463"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000467"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000482"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000484"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000511"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000519"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0001343"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C164332"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C164607"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001415"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000088"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000134"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000182"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000245"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000412"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cluster_size"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#daily_deaths"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#generation_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tests"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#opportunity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence"/>
-            <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
-            <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000449"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COVOC_0010003"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_006827"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000463"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000467"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000482"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000484"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000511"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000519"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0001343"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001415"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000088"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000134"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000182"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000245"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000412"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cluster_size"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#daily_deaths"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#generation_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tests"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#opportunity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence"/>
-            <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
-            <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000449"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_006827"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000463"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000467"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000482"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000484"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000511"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000519"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0001343"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001415"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000088"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000182"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000245"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000412"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#daily_deaths"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#generation_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tests"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#opportunity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate"/>
-            <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
-            <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000449"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_006827"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000463"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000467"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000482"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000484"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000511"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000519"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0001343"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001415"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000088"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000182"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000245"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000412"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#generation_interval"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#opportunity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval"/>
-            <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
-            <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_006827"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000482"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000484"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001415"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000088"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000182"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000245"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000412"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000424"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate"/>
-            <rdf:Description rdf:about="http://purl.unep.org/sdg/SDGIO_00020030"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804"/>
-            <rdf:Description rdf:about="http://www.orpha.net/ORDO/Orphanet_409966"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
