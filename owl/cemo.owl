@@ -346,7 +346,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -413,14 +413,6 @@
         <terms:description xml:lang="en">A data item that is the output of some infection case count.</terms:description>
         <rdfs:label xml:lang="en">total number of cases</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
-        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
-    </rdf:Description>
     
 
 
@@ -642,7 +634,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -702,7 +694,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -895,7 +887,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">timecourse of disease</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">timeline of disease</obo:IAO_0000118>
         <rdfs:label xml:lang="en">disease course</rdfs:label>
@@ -1054,7 +1065,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TRANS_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">transmission</rdfs:label>
     </owl:Class>
     
@@ -1349,7 +1359,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposure">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">exposure</rdfs:label>
     </owl:Class>
     
@@ -1565,7 +1574,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
         <rdfs:label xml:lang="en">timecourse of infection</rdfs:label>
     </owl:Class>
@@ -1971,7 +1999,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
+                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
