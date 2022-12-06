@@ -416,14 +416,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
-        <owl:equivalentClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Event"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
@@ -2352,27 +2344,8 @@
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Chronoid -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Chronoid">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_left_time_boundary"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#has_right_time_boundary"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description xml:lang="en">Chronoids are entities sui generis.
-
-Every chronoid has exactly two extremal and
-infinitely many inner time boundaries which are
-equivalently called time-points.</terms:description>
-        <rdfs:label xml:lang="en">chronoid</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED chronoid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2380,8 +2353,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Concrete -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Concrete">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
-        <rdfs:label xml:lang="en">concrete</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED concrete</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2389,8 +2362,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Event -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Event">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Occurrent"/>
-        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED event</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2398,7 +2371,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Individual -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Individual">
-        <rdfs:label xml:lang="en">individual</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED individual</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2406,19 +2380,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#left_boundary_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <rdfs:label xml:lang="en">left time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED left time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2426,9 +2389,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Occurrent -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Occurrent">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
-        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
-        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED occurrent</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2436,14 +2398,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Process -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Process">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">process</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2451,8 +2407,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Processual_Structure">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Concrete"/>
-        <rdfs:label xml:lang="en">processual structure</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED processual structure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2460,19 +2416,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#right_boundary_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Chronoid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <rdfs:label xml:lang="en">right time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED right time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2489,8 +2434,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Space_time -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Space_time">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Individual"/>
-        <rdfs:label xml:lang="en">space time entity</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED space time entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2498,11 +2443,8 @@ equivalently called time-points.</terms:description>
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Temporal_region -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region">
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-        <owl:disjointWith rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary"/>
-        <terms:description xml:lang="en">Time Regions are defined as the mereological sum of chronoids,
-i.e. time regions may consist of non-connected intervals of time.</terms:description>
-        <rdfs:label xml:lang="en">temporal region</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED temporal region</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2510,10 +2452,8 @@ i.e. time regions may consist of non-connected intervals of time.</terms:descrip
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Time -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Space_time"/>
-        <terms:description xml:lang="en">The time model of GFO is based on Brentano and the glass continuum of Allen&amp;Hayes.</terms:description>
-        <rdfs:label xml:lang="en">time</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED time</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2521,27 +2461,8 @@ i.e. time regions may consist of non-connected intervals of time.</terms:descrip
     <!-- http://www.onto-med.de/ontologies/gfo.owl#Time_boundary -->
 
     <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Time_boundary">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Left_time_boundary"/>
-                    <rdf:Description rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Right_time_boundary"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#time_boundary_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
-        <terms:description xml:lang="en">Time boundaries depend on a chronoids and can coincide.
-
-Left time boundaries, if viewed from the perspective of bounding a specific chronoid, are those which are earlier than any inner or right time boundary of that chronoid. On the other hand, within a pair of coincident time boundaries, a left time boundary is later than the right time boundary in that pair.
-
-[FL, 2008-02-27]</terms:description>
-        <rdfs:label xml:lang="en">time boundary</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED time boundary</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
