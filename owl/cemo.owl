@@ -308,7 +308,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">The measure (R0) of the transmission potential of a disease such that the infection will be able to start spreading in a population or not. It is the average number of secondary infections produced by a typical case of an infection in a population where everyone is susceptible.</terms:description>
@@ -479,7 +479,6 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000425 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000425">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition"/>
         <obo:IAO_0000118 xml:lang="en">virulence factor</obo:IAO_0000118>
         <rdfs:label xml:lang="en">virulence factor disposition</rdfs:label>
@@ -491,7 +490,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">contagiousness</rdfs:label>
     </owl:Class>
     
@@ -581,7 +579,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000509">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">organism population</rdfs:label>
     </owl:Class>
     
@@ -631,7 +628,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000586">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">infection</rdfs:label>
     </owl:Class>
     
@@ -650,7 +646,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000665">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <obo:IAO_0000118 xml:lang="en">infection source</obo:IAO_0000118>
         <rdfs:label xml:lang="en">source of infection</rdfs:label>
     </owl:Class>
@@ -700,7 +695,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology"/>
         <rdfs:label xml:lang="en">person</rdfs:label>
     </owl:Class>
     
@@ -821,7 +815,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">population</rdfs:label>
     </owl:Class>
     
@@ -849,7 +842,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">clinical history</rdfs:label>
     </owl:Class>
     
@@ -859,7 +851,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">disease</rdfs:label>
     </owl:Class>
     
@@ -909,7 +900,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <obo:IAO_0000118 xml:lang="en">geographic distribution</obo:IAO_0000118>
         <rdfs:label xml:lang="en">spatial pattern</rdfs:label>
     </owl:Class>
@@ -975,7 +965,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">cohort</rdfs:label>
     </owl:Class>
     
@@ -1000,11 +989,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2167,7 +2156,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#risk_factor">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <rdfs:label xml:lang="en">risk factor</rdfs:label>
     </owl:Class>
     
@@ -2464,7 +2452,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Type of prevalence where the data have been collected for one point of time.</terms:description>
