@@ -308,7 +308,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">The measure (R0) of the transmission potential of a disease such that the infection will be able to start spreading in a population or not. It is the average number of secondary infections produced by a typical case of an infection in a population where everyone is susceptible.</terms:description>
@@ -1001,11 +1001,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1455,6 +1455,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#interpretation"/>
         <obo:IAO_0000118 xml:lang="en">case</obo:IAO_0000118>
     </owl:Class>
     
@@ -2468,7 +2469,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Time"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description xml:lang="en">Type of prevalence where the data have been collected for one point of time.</terms:description>
