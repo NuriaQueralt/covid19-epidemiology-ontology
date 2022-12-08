@@ -320,27 +320,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">Length of time a person may transmit a microorganism; the duration of time a person is infectious</terms:description>
         <rdfs:label xml:lang="en">infectious period</rdfs:label>
     </owl:Class>
@@ -584,40 +565,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IDO_0000511 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000511">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Quantity of members of a population that have an infection.</terms:description>
-        <rdfs:label xml:lang="en">infected population</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IDO_0000519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">The time that passes between being exposed to something that can cause disease (such as radiation or a virus) and having symptoms.</terms:description>
         <rdfs:label xml:lang="en">incubation period</rdfs:label>
     </owl:Class>
@@ -655,27 +607,9 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0001343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0001343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">latent time</obo:IAO_0000118>
         <terms:description xml:lang="en">Period of time starting with the establishing of an infection in a host and ending when the host becomes contagious.</terms:description>
         <rdfs:label xml:lang="en">latency period</rdfs:label>
     </owl:Class>
@@ -1226,14 +1160,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#diseased_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#diseased_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#distribution -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#distribution">
@@ -1420,14 +1346,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#immune_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#immune_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes">
@@ -1470,28 +1388,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects.</terms:description>
         <rdfs:label xml:lang="en">infection fatality rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infectious_agent_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infectious_agent_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
     </owl:Class>
     
 
@@ -1560,13 +1462,14 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">timecourse of infection</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">timecourse of infection</rdfs:label>
+        <rdfs:label xml:lang="en">infection course</rdfs:label>
     </owl:Class>
     
 
@@ -1837,7 +1740,7 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#other_indicators -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#other_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">other indicators</rdfs:label>
     </owl:Class>
     
@@ -1954,27 +1857,8 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Temporal_region"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">period from infectious to confirmed</rdfs:label>
     </owl:Class>
     
@@ -2074,6 +1958,16 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">quantitative quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#quantity_infected_population -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantity_infected_population">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <terms:description xml:lang="en">Quantity of members of a population that have an infection.</terms:description>
+        <rdfs:label xml:lang="en">quantity of infected population</rdfs:label>
     </owl:Class>
     
 
@@ -2221,14 +2115,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#susceptible_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/cemo.owl#suspected_cases -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases">
@@ -2297,6 +2183,51 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">weighted prevalence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">infected population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">diseased population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">infectious agent population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">susceptible population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">immune population</rdfs:label>
     </owl:Class>
     
 
