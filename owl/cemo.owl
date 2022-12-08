@@ -320,7 +320,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">Length of time a person may transmit a microorganism; the duration of time a person is infectious</terms:description>
         <rdfs:label xml:lang="en">infectious period</rdfs:label>
@@ -568,7 +568,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <terms:description xml:lang="en">The time that passes between being exposed to something that can cause disease (such as radiation or a virus) and having symptoms.</terms:description>
         <rdfs:label xml:lang="en">incubation period</rdfs:label>
@@ -607,7 +607,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0001343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0001343">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <obo:IAO_0000118 xml:lang="en">latent time</obo:IAO_0000118>
         <terms:description xml:lang="en">Period of time starting with the establishing of an infection in a host and ending when the host becomes contagious.</terms:description>
@@ -1857,7 +1857,7 @@
     <!-- http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">period from infectious to confirmed</rdfs:label>
     </owl:Class>
