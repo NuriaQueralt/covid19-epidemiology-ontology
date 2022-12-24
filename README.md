@@ -127,8 +127,12 @@ We base our decisions on building this ontology to follow as much as possible th
 <a alt="Summay" href="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/summary_presicion_medicine.png" target="_blank"><img src="https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/main/img/summary_precision_medicine.png" height="50%" weight="50%"></a>
 
 
+## Projects using CEMO
+The CEMO ontology is currently being used in:
 
-## Epidemiology and monitoring ontology for COVID-19 project
+   * FAIRification of [Leiden Longevity Study (LLS)](https://dw.clinicalresearch.nl/pub/study/lls): The aim of the study was to retrieve genetically determined mechanisms of longevity and their interaction with the environment. CEMO is used for the FAIRification of the collected epidemiological data. Especifically, data is semantically modelled based on the CEMO model, which it is the OBO version of the EJP RD core model. To know more about the LLS-FAIRification project see the [GitHub repository](https://github.com/LUMC-DCC/LLS-FAIRification).  
+
+## Epidemiology and monitoring ontology for COVID-19 project - Virtual BioHackathon 2020 project
 ### Abstract
 
 Epidemiological data is necessary to monitor public health, and to assess the impact of disease outbreaks and efficacy of mitigating interventions. In the context of an infectious disease outbreak it is imperative to have these data as FAIR as possible to facilitate rapid analysis to support timely evidence-based decision making. During the past virtual BioHackathon-COVID-19 we evaluated the availability of some epidemiological quantitative indicators in OBO ontologies and detected that while between the [Statistics ontology](http://stato-ontology.org/) and Epidemiology Ontology (EPO) we have many of the usual concepts described, essential classes are entirely missing for capturing these different indicators with the precision required, and also definition reconciliation needs to be done. Furthermore, we noticed that EPO is not maintained since its publication and has been deprecated from OBO Foundry [1]. Another issue that may be improved is the current absence of axioms and definition patterns that relate epidemiology (i.e., observations of a population) to clinical ontologies (i.e., observations on an individual). A formal model is needed to describe epidemiological data for monitoring events such as COVID-19 disease as well as to capture information related to other disease outbreaks and future epidemics. 
