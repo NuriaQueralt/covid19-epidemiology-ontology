@@ -1,9 +1,20 @@
 # The COVID-19 epidemiology and monitoring ontology 
 [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a common ontological model to make epidemiological quantitative data for monitoring the COVID-19 outbreak machine-readable and interoperable to facilitate its exchange, integration and analysis, to eventually support evidence-based rapid response. This ontology is built following knowledge-engineering standards and the OBO principles to bridge epidemiology into the semantic landscape of the biomedical sciences. See a detailed description of the model and the axiom patterns implemented in the following section.  
+The COVID-19 Epidemiology and Monitoring Ontology (CEMO) is designed to make epidemiological quantitative data for monitoring the COVID-19 outbreak machine-readable and interoperable to facilitate its exchange, integration and analysis, to eventually support evidence-based rapid response. This ontology has built following knowledge-engineering standards and the OBO principles to bridge epidemiology into the semantic landscape of the biomedical sciences. See a detailed description of the model and the axiom patterns implemented in the following section.  
 
 This is the first release of the ontology, which will be refined iteratively with domain experts and users. This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [(BH-COVID19 2020 GitHub)](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology) and started at the ELIXIR-Europe BioHackathon 2020 [(BH-EU 2020 GitHub)](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30), see project description below, and continued during the [SWAT4HCLS virtual hackathon 2021](https://swat4hcls.wiki.opencura.com/wiki/Main_Page#Title:_Adding_logical_structure_to_the_COVID-19_epidemiology_ontology). This project is the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. 
+
+## What is next?
+This ontology is under development. Currently, we are working on:
+
+* Ontological model: Improving the logical structure of the model and text content.
+
+* OBO Foundry: Better following the OBO principles as we intend to submit the ontology to the OBO Foundry.
+
+* COVID-19 harmonization: We are collaborating with [the COVID-19 harmonization community effort](https://github.com/CIDO-ontology/COVID-19-ontology-harmonization) for the harmonization of epidemiological information
+
+* New challenges: we are evaluating the model for new challenges.
 
 ### I want to give you feedback
 
@@ -20,17 +31,18 @@ Please leave us a comment on the [issue tracker](https://github.com/NuriaQueralt
 
 ### I want to cite
 
-We are in the process to provide DOIs as well..
+You can use the following citations: 
 
+* SWAT4HCLS 2023 Conference: Presentations, Posters and Supplementary Materials. Poster [DOI]() [PDF]()
 
-* ISMB/ECCB 2021 - Bio-Ontologies track abstract [PDF](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/4157d0aa4fe5a283a9956acc4ad8264f2bd1418b/paper/ismb-bioontologies-2021/bio_ontologies_talk_abstract_2021.pdf)
+* ISMB/ECCB 2021 Bio-Ontologies track abstract - 2021 ISMB Bio-Ontologies Community of Special Interest Zenodo Collection [DOI](https://doi.org/10.5281/zenodo.5752959) [PDF](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/4157d0aa4fe5a283a9956acc4ad8264f2bd1418b/paper/ismb-bioontologies-2021/bio_ontologies_talk_abstract_2021.pdf)
 * BioHackrXiv [DOI](https://doi.org/10.37044/osf.io/n6tcz) [PDF](https://github.com/NuriaQueralt/covid19-epidemiology-ontology/blob/9168f4cbafbb62107b31d5a7b9a5dc5839de6416/paper/biohackrxiv/paper.pdf)
 
 
 
-## Formal description
+## Formal description (version 2 is under development stay tuned!)
 
-CEMO is an OBO ontology, i.e. founded on the [BFO](http://www.obofoundry.org/ontology/bfo.html) hierarchy, and formalized through [SIO](https://github.com/MaastrichtU-IDS/semanticscience) and [GFO](https://www.onto-med.de/ontologies/gfo) upper-level ontologies. The taxonomic structure is extended from [IDO](http://www.obofoundry.org/ontology/ido.html), a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
+CEMO is designed to be an OBO ontology, i.e., founded on the [BFO](http://www.obofoundry.org/ontology/bfo.html) hierarchy, and formalized through [SIO](https://github.com/MaastrichtU-IDS/semanticscience) and [GFO](https://www.onto-med.de/ontologies/gfo) upper-level ontologies. The taxonomic structure is extended from [IDO](http://www.obofoundry.org/ontology/ido.html), a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
 
 Our formal modeling followed a rationale already used in other studies: 1) determine the domain and scope of the ontology; 2) ontology reuse and addressing poor ontological coverage of COVID-19 epidemiology; and 3) development of a conceptual model.
 
@@ -74,23 +86,17 @@ We implemented axiom patterns to describe epidemiological quantitative parameter
 
 ```owl
 "epidemiology quantitative quality" SubClassOf (*is_attribute_of* some "entity") 
-                                    and (*is_about* some "epi core concept")
 ```
 
-See what `entity` and `epi core concept` mean:
+See what `entity` mean:
 
 	* `Entity`: we use one of the GFO-based concepts to link to epidemiological parameters for descritive epidemiology: *person*, *time*, *space*, *line of infection* or *line of disease*.
 	
-	* `epi core concept`: we use one of the epidemiology core concepts for interpretation.
-
-
 
 For instance:
 
 ```owl
 "incidence" SubClassOf (*is_attribute_of* some "space")
-            and (*is_about* some "distribution")
-            and (*is_about* some "source of infection")
 ```
 
 For timelines we re-used GFO using the 'chronoid' concept and the GFO-based 'mortality' model approach with the following axiomatization:
@@ -108,7 +114,7 @@ This is a first approach, we aim to extend it in further iterations of the model
 
 ### Formal description of patient-population link 
 
-To link patient-population information we re-used the relationship in the GA4GH Phenopackets standard based on `composition` semantics and formalized with the axiom:
+Following RDA best practices recommendation to link patient-population information, we re-used the relationship in the GA4GH Phenopackets standard based on `composition` semantics and formalized it with the axiom:
 
 ```owl
 "population" *has_member* "person"
@@ -130,8 +136,10 @@ We base our decisions on building this ontology to follow as much as possible th
 ## Projects using CEMO
 The CEMO ontology is currently being used in:
 
-   * FAIRification of [Leiden Longevity Study (LLS)](https://dw.clinicalresearch.nl/pub/study/lls): The aim of the study was to retrieve genetically determined mechanisms of longevity and their interaction with the environment. CEMO is used for the FAIRification of the collected epidemiological data. Especifically, data is semantically modelled based on the CEMO model, which it is the OBO version of the EJP RD core model. To know more about the LLS-FAIRification project see the [GitHub repository](https://github.com/LUMC-DCC/LLS-FAIRification).  
+   * FAIRification of [Leiden Longevity Study (LLS)](https://dw.clinicalresearch.nl/pub/study/lls): The aim of the study was to retrieve genetically determined mechanisms of longevity and their interaction with the environment. CEMO is used for the FAIRification of the collected epidemiological data. Especifically, data is semantically modelled based on the CEMO model, which is the OBO version of the EJP RD core model, i.e., it is the EJP RD core model mapped to ontological terms from ontologies currently accepted in the OBO Foundry. To know more about the LLS-FAIRification project see the [GitHub repository](https://github.com/LUMC-DCC/LLS-FAIRification).  
 
+
+# INCEPTION
 ## Epidemiology and monitoring ontology for COVID-19 project - Virtual BioHackathon 2020 project
 ### Abstract
 
