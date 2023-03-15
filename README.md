@@ -12,7 +12,7 @@ This ontology is under development. Currently, we are working on:
 
 * OBO Foundry: Better following the OBO principles as we intend to submit the ontology to the OBO Foundry.
 
-* COVID-19 harmonization: We are collaborating with [the COVID-19 harmonization community effort](https://github.com/CIDO-ontology/COVID-19-ontology-harmonization) for the harmonization of epidemiological information
+* COVID-19 harmonization: We are collaborating with [the COVID-19 harmonization community effort](https://github.com/CIDO-ontology/COVID-19-ontology-harmonization) for the harmonization of epidemiological information.
 
 * New challenges: we are evaluating the model for new challenges.
 
