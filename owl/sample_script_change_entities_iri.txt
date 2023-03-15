@@ -1,0 +1,1 @@
+https://github.com/smalghamdi/groovyScripts/blob/master/change_entities_iri.groovy
