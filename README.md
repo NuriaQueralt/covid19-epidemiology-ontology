@@ -40,7 +40,7 @@ You can use the following citations:
 
 
 
-## Formal description (version 2 is under development stay tuned!)
+## Formal description (under development stay tuned!)
 
 CEMO is designed to be an OBO ontology, i.e., founded on the [BFO](http://www.obofoundry.org/ontology/bfo.html) hierarchy, and formalized through [SIO](https://github.com/MaastrichtU-IDS/semanticscience) and [GFO](https://www.onto-med.de/ontologies/gfo) upper-level ontologies. The taxonomic structure is extended from [IDO](http://www.obofoundry.org/ontology/ido.html), a core ontology for infectious diseases. The ontology is built in OWL 2, a DL-based formalism and semantic web standard for knowledge representation to enable data sharing and logic reasoning.
 
@@ -139,6 +139,23 @@ The CEMO ontology is currently being used in:
    * FAIRification of [Leiden Longevity Study (LLS)](https://dw.clinicalresearch.nl/pub/study/lls): The aim of the study was to retrieve genetically determined mechanisms of longevity and their interaction with the environment. CEMO is used for the FAIRification of the collected epidemiological data. Especifically, data is semantically modelled based on the CEMO model, which is the OBO version of the EJP RD core model, i.e., it is the EJP RD core model mapped to ontological terms from ontologies currently accepted in the OBO Foundry. To know more about the LLS-FAIRification project see the [GitHub repository](https://github.com/LUMC-DCC/LLS-FAIRification).  
 
 
+## Authors
+ Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ],
+ Paul N. Schofield,
+ Robert Hoehndorf,
+ Claus Weiland,
+ Marco Roos
+
+
+## License
+CEMO is licensed under the terms of the [CC0 License](https://creativecommons.org/share-your-work/public-domain/cc0/).
+
+
+## Acknowledgements
+Special thanks to Elena de la Calle, Philippe Rocca-Serra, Rajini Nagrani (RDA), Niek van Ulzen (LLS), Charles Tapley Hoyt (OBO) for their input. BioHackathon COVID-19 2020, SWAT4HCLS 2021, and BioHackathon-Europe 2021 for supporting this project. This initiative has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement No 825575 (EJP RD), the collaboration project Trusted World of Corona (TWOC) co-funded by the PPP allowance by Health-Hollland, and the Alan Turing Institute.
+
+
+
 # INCEPTION
 ## Epidemiology and monitoring ontology for COVID-19 project - Virtual BioHackathon 2020 project
 ### Abstract
@@ -169,17 +186,11 @@ Covid-19 | Data Platform | Federated Human Data | Interoperability Platform
 
 ### Team
 
-### Authors
+#### Lead(s)
 
  Núria Queralt-Rosinach [ n.queralt_rosinach@lumc.nl ],
- Paul N. Schofield,
- Robert Hoehndorf,
- Claus Weiland,
- Erik Schultes,
- César H. Bernabé,
- Marco Roos
  
-### Contributors
+#### Contributors
  Elena de la Calle [ elena.delacalle@bsc.es ],
  Philippe Rocca-Serra [ philippe.rocca-serra@oerc.ox.ac.uk ]
 
@@ -258,8 +269,6 @@ Expand to other indicators such as WHO indicators:
 4. On the usefulness of ontologies in epidemiology research and practice [[PMC ID](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3607093/)]
 
 
-## License
-CEMO is licensed under the terms of the [CC0 License](https://creativecommons.org/share-your-work/public-domain/cc0/).
 
 
 
