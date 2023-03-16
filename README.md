@@ -5,6 +5,8 @@ The COVID-19 Epidemiology and Monitoring Ontology (CEMO) is designed to make epi
 
 This is the first release of the ontology, which will be refined iteratively with domain experts and users. This project was conceived during the [virtual BioHackathon COVID-19 2020](https://github.com/virtual-biohackathons/covid-19-bh20/) [(BH-COVID19 2020 GitHub)](https://github.com/virtual-biohackathons/covid-19-bh20/wiki/Ontology) and started at the ELIXIR-Europe BioHackathon 2020 [(BH-EU 2020 GitHub)](https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/30), see project description below, and continued during the [SWAT4HCLS virtual hackathon 2021](https://swat4hcls.wiki.opencura.com/wiki/Main_Page#Title:_Adding_logical_structure_to_the_COVID-19_epidemiology_ontology). This project is the result of the commitment and volunteering work of scientists, experts and any person with interest in contributing. 
 
+Note that **CEMO is currently under development** and it is intended to be submitted to OBO at some later date, which means that the URIs may not be stable.
+
 ## What is next?
 This ontology is under development. Currently, we are working on:
 
