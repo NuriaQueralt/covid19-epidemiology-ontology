@@ -565,6 +565,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IDO_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">infected population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">diseased population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">infectious agent population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">susceptible population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IDO_0000519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000519">
@@ -581,6 +617,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000586">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+        <rdfs:label xml:lang="en">immune population</rdfs:label>
     </owl:Class>
     
 
@@ -2183,51 +2228,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
         <rdfs:label xml:lang="en">weighted prevalence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000511 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000511">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <rdfs:label xml:lang="en">infected population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000512 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000512">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <rdfs:label xml:lang="en">diseased population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000513 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000513">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <rdfs:label xml:lang="en">infectious agent population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000514 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <rdfs:label xml:lang="en">susceptible population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000592 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#http://purl.obolibrary.org/obo/IDO_0000592">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-        <rdfs:label xml:lang="en">immune population</rdfs:label>
     </owl:Class>
     
 
