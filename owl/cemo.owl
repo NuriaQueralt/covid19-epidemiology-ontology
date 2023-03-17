@@ -1285,6 +1285,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#other_indicators"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_systems_indicators"/>
+        <rdfs:label xml:lang="en">health status indicators</rdfs:label>
     </owl:Class>
     
 
@@ -1293,6 +1294,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#health_systems_indicators">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#other_indicators"/>
+        <rdfs:label xml:lang="en">health systems indicators</rdfs:label>
     </owl:Class>
     
 
@@ -1360,6 +1362,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:IAO_0000118 xml:lang="en">case</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">infected person</rdfs:label>
     </owl:Class>
     
 
@@ -1368,6 +1371,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_antigen_capture_tes">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by antigen capture test</rdfs:label>
     </owl:Class>
     
 
@@ -1376,6 +1380,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_serology">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by serology</rdfs:label>
     </owl:Class>
     
 
@@ -1384,6 +1389,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_disgnosed_by_PCR">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by PCR</rdfs:label>
     </owl:Class>
     
 
@@ -1750,6 +1756,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#patient">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
     </owl:Class>
     
 
@@ -1933,6 +1940,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of infection</rdfs:label>
     </owl:Class>
     
 
@@ -1941,6 +1949,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection_process">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of infection process</rdfs:label>
     </owl:Class>
     
 
@@ -1949,6 +1958,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of person</rdfs:label>
     </owl:Class>
     
 
@@ -2023,6 +2033,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#recovered_person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">recovered person</rdfs:label>
     </owl:Class>
     
 
@@ -2060,6 +2071,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#risk_factors_indicators">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#service_coverage_indicators"/>
+        <rdfs:label xml:lang="en">risk factors indicators</rdfs:label>
     </owl:Class>
     
 
@@ -2094,6 +2106,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#service_coverage_indicators">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators"/>
+        <rdfs:label xml:lang="en">service coverage indicators</rdfs:label>
     </owl:Class>
     
 
@@ -2111,6 +2124,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">susceptible person</rdfs:label>
     </owl:Class>
     
 
@@ -2174,6 +2188,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000118 xml:lang="en">virus factor</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">virus factor disposition</rdfs:label>
     </owl:Class>
     
 
