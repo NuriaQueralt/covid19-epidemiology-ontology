@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cemo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cemo/releases/16-05-2021/cemo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cemo/releases/2023-03-18/cemo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elena de la Calle</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</dc:contributor>
@@ -27,7 +27,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">COVID-19 Epidemiology and Monitoring Ontology (CEMO)</terms:title>
         <rdfs:comment xml:lang="en">This ontology is under development and URIs may not be stable.</rdfs:comment>
-        <owl:versionInfo>16-05-2021</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -305,7 +305,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -322,7 +322,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Length of time a person may transmit a microorganism; the duration of time a person is infectious</terms:description>
         <rdfs:label xml:lang="en">infectious period</rdfs:label>
     </owl:Class>
@@ -332,7 +332,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">A population of organisms that have been infected, but are no longer able to transmit the disease and to acquire the infection again.</terms:description>
         <rdfs:label xml:lang="en">recovered cases</rdfs:label>
     </owl:Class>
@@ -351,7 +351,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000449 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000449">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">A period of time that must elapse before those exposed to or attacked by a contagious disease can be considered as incapable respectively of developing or transmitting the disease.</terms:description>
         <rdfs:label xml:lang="en">quarantine period</rdfs:label>
     </owl:Class>
@@ -361,7 +361,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000497 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000497">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">A count of individuals in a population who meet the criteria of some case definition during some time interval.</terms:description>
         <rdfs:label xml:lang="en">number of cases new this week</rdfs:label>
     </owl:Class>
@@ -371,7 +371,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000568 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000568">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">A data item that is the output of some infection case count and that represents the number of infectious disease cases that ended in death.</terms:description>
         <rdfs:label xml:lang="en">total number of deaths</rdfs:label>
     </owl:Class>
@@ -381,7 +381,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000569">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">A data item that is the output of some infection case count.</terms:description>
         <rdfs:label xml:lang="en">total number of cases</rdfs:label>
     </owl:Class>
@@ -394,10 +394,1208 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases removed from isolation this week</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">A hospital-wide nosocomial infection rate/100 admissions for a given period (month, quarter, or year) is commonly calculated. In this rate, a patient who has two infections is actually counted twice.</terms:description>
+        <rdfs:label xml:lang="en">hospital-wide nosocomial infection rate per 100 admissions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects.</terms:description>
+        <rdfs:label xml:lang="en">infection fatality rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Quantity of members of a population that have an infection.</terms:description>
+        <rdfs:label xml:lang="en">quantity of infected population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">The proportion of a population that need to be immune in order for an infectious disease to become stable in that community.</terms:description>
+        <rdfs:label xml:lang="en">herd immunity threshold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases with mild symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">cumulative cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000008">
+        <rdfs:label xml:lang="en">DEPRECATED epidemiological core concepts</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000118 xml:lang="en">virus factor</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">virus factor disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">onset of symptom to hospitalization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Number of cases of a disease or another health-related condition, closely grouped in time and place.</terms:description>
+        <rdfs:label xml:lang="en">cluster size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases with exposure events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">testing rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">rate of infectious contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">initial infection case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">The risk of infection is related to the extrinsic risk factors (use of devices such as ventilator, central line intravascular catheter, urinary catheter, surgical operation).</terms:description>
+        <rdfs:label xml:lang="en">device-specific rates and procedure-specific rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by antigen capture test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">cases by exposure in a healthcare setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage of asymptomatic of confirmed cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">total number of cases removed from isolation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases exposed by local (one or cluster) case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Hospital-wide patient infection rate/100 admissions are used to avoid the pitfall of multiple infections in the same patient. This rate may be calculated for a given period: month, quarter, and year. In this rate, a patient with two infections is counted only once.</terms:description>
+        <rdfs:label xml:lang="en">hospital-wide patient infection rate per 100 admissions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage of cases icu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percent increase in mortality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage cases female sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">undetected cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">Represents the killing power of a disease, as the ratio of deaths to cases. The time interval is not specified. Not to be confused with mortality rate.</terms:description>
+        <rdfs:label xml:lang="en">case fatality rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">susceptible person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Not all contacts will become infected and the average number of secondary cases per infectious case will be lower than the basic reproduction number. The effective reproductive number (R) is the average number of secondary cases per infectious case in a population made up of both susceptible and non-susceptible hosts.</terms:description>
+        <rdfs:label xml:lang="en">effective reproduction number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000091"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000039"/>
+        <rdfs:label xml:lang="en">health systems indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">daily deaths</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">exposed contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">average rate of infectious contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">new daily case rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">weighted prevalence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Number of new cases of a specified disease during a specified time interval per 100 populations at risk during the same time interval.</terms:description>
+        <rdfs:label xml:lang="en">attack rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000091"/>
+        <rdfs:label xml:lang="en">health status indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">median age of cases died</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">The proportion of reported cases that actually have the health-related event under surveillance.</terms:description>
+        <rdfs:label xml:lang="en">predictive value positive (pvp)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">cumulative case rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">duration of infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of infection process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage cases died</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases currently in icu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">total number of cases ever hospitalized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">median age of cases hospitalized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases hospitalized this week</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Male-to-female ratio of confirmed case-patients</terms:description>
+        <rdfs:label xml:lang="en">male-to-female ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Time for a given quantity to double in size or number at a constant growth rate.</terms:description>
+        <rdfs:label xml:lang="en">epidemic doubling time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">per capita mobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">incidence of sever outcomes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">suspected cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">positive contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">rate of cases with at least one comorbidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">proportion of cases attributed to travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Indicates epidemic growth rate as the median percent change in daily numbers of new cases.</terms:description>
+        <rdfs:label xml:lang="en">percent daily change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000061"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">timecourse of infection</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">infection course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases exposed by international travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">infectious process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">cumulative death rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Vaccination effort needed to eliminate an infection from a population.</terms:description>
+        <rdfs:label xml:lang="en">critical vaccination coverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">period from infectious to confirmed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">prevalence of sars-cov-2 seropositivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases currently in hospital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">initial exposed case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases by testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage cases removed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of tests</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">Number of exposed persons developing the disease within the range of incubation period following exposure to a primary case.</terms:description>
+        <rdfs:label xml:lang="en">secondary attack rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of schools with exposure events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">length of icu stay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">non-pharmaceutical interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Average number of cases that will result from an index case.</terms:description>
+        <rdfs:label xml:lang="en">reproductive rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">recovered person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quality of infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">The time interval between symptom onset in a primary case and a secondary case, which is considered a reasonable approximation of the generation interval and is more practical to observe</terms:description>
+        <rdfs:label xml:lang="en">serial interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of tested specimens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">growth rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases exposed by local unknown exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">exposition interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">odds ratio for being an infected contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage of cases which are detected</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by PCR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">average daily number of new infections generated per case (rt)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">untraceable contacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Proportion of confirmed cases that were hospitalized.</terms:description>
+        <rdfs:label xml:lang="en">hospitalization rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">median age of cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">other indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of deaths new this week</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Number of daily contacts the infected person has; average number of opportunities a person has to spread the infection each day the person is infectious.</terms:description>
+        <rdfs:label xml:lang="en">opportunity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases with no symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">exposed individuals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">susceptible individuals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000097">
+        <rdfs:label xml:lang="en">DEPRECATED interpretation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000039"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000105"/>
+        <rdfs:label xml:lang="en">service coverage indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000099">
+        <rdfs:label xml:lang="en">DEPRECATED distribution</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">infected person diagnosed by serology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000028"/>
+        <rdfs:label xml:lang="en">environmental risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">rate of community transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases with missing exposure information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000118 xml:lang="en">case</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">infected person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000039"/>
+        <rdfs:label xml:lang="en">risk factors indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">new daily death rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000107">
+        <rdfs:label xml:lang="en">DEPRECATED descriptive epidemiology</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000108">
+        <rdfs:label xml:lang="en">DEPRECATED etiology</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of active cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">relative change in new infections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">daily cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">cumulative excess mortality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Number of points of interets within a geographical area.</terms:description>
+        <rdfs:label xml:lang="en">points of interest (pois)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">prevalence of comorbidities cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">The time lag from a primary infection to a secondary infection caused by the primary infection.</terms:description>
+        <rdfs:label xml:lang="en">generation interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Proportion of confirmed cases that suffered complications.</terms:description>
+        <rdfs:label xml:lang="en">complication rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage of cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">number of cases with school exposure events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">percentage of laboratory findings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">protection rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Percent of positive specimens.</terms:description>
+        <rdfs:label xml:lang="en">rate cases by testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <rdfs:label xml:lang="en">new daily cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000028"/>
+        <rdfs:label xml:lang="en">host risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
+        <terms:description xml:lang="en">Confirmed and infected cases under quarantine.</terms:description>
+        <rdfs:label xml:lang="en">quarantined cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEMO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEMO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">quantitative quality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COVOC_0010003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COVOC_0010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Any person meeting the laboratory criteria for COVID-19.</terms:description>
         <rdfs:label xml:lang="en">confirmed cases</rdfs:label>
     </owl:Class>
@@ -407,7 +1605,7 @@
     <!-- http://purl.obolibrary.org/obo/GSSO_006827 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GSSO_006827">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">fertility rate</rdfs:label>
     </owl:Class>
     
@@ -461,7 +1659,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000425 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000425">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000009"/>
         <obo:IAO_0000118 xml:lang="en">virulence factor</obo:IAO_0000118>
         <rdfs:label xml:lang="en">virulence factor disposition</rdfs:label>
     </owl:Class>
@@ -480,7 +1678,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000463">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -505,7 +1703,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000466 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000466">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">The ratio of the number of cases of the disease in relation to the total number of individuals infected; a quality that inheres in an infectious agent and is the degree to which realizations of the infectious disease caused by the infectious agent become severe or fatal.</terms:description>
         <rdfs:label xml:lang="en">virulence</rdfs:label>
     </owl:Class>
@@ -515,7 +1713,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000467 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000467">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Average susceptibility of the population; the share of the population capable of being infected.</terms:description>
         <rdfs:label xml:lang="en">susceptibility</rdfs:label>
     </owl:Class>
@@ -525,7 +1723,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000482 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000482">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -541,7 +1739,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000484 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000484">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -606,7 +1804,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000519">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">The time that passes between being exposed to something that can cause disease (such as radiation or a virus) and having symptoms.</terms:description>
         <rdfs:label xml:lang="en">incubation period</rdfs:label>
     </owl:Class>
@@ -634,7 +1832,7 @@
     <!-- http://purl.obolibrary.org/obo/IDO_0000658 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#exposure"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000124"/>
         <rdfs:label xml:lang="en">host exposure to infectious agent</rdfs:label>
     </owl:Class>
     
@@ -654,7 +1852,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0001343">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <obo:IAO_0000118 xml:lang="en">latent time</obo:IAO_0000118>
         <terms:description xml:lang="en">Period of time starting with the establishing of an infection in a host and ending when the host becomes contagious.</terms:description>
         <rdfs:label xml:lang="en">latency period</rdfs:label>
@@ -683,7 +1881,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C164332 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C164332">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">sequence identity of sample</rdfs:label>
     </owl:Class>
     
@@ -692,7 +1890,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C164607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C164607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">gene sequence identity</rdfs:label>
     </owl:Class>
     
@@ -701,7 +1899,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C17734 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17734">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Population groups with an increased likelihood of a disease or other health issue</terms:description>
         <rdfs:label xml:lang="en">at-risk population</rdfs:label>
     </owl:Class>
@@ -721,7 +1919,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C67448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67448">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">The dose of pathogens received by the exposed individual.</terms:description>
         <rdfs:label xml:lang="en">infectious dose</rdfs:label>
     </owl:Class>
@@ -731,7 +1929,7 @@
     <!-- http://purl.obolibrary.org/obo/OAE_0001869 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001869">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">The rate of population recovering from and infection.</terms:description>
         <rdfs:label xml:lang="en">recovery rate</rdfs:label>
     </owl:Class>
@@ -741,7 +1939,7 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -757,7 +1955,7 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">It measures the frequency of all current cases (Old &amp; New) existing during a defined period of time (e.g. annual prevalence) expressed in relation to a defined population.</terms:description>
         <rdfs:label xml:lang="en">period prevalence</rdfs:label>
     </owl:Class>
@@ -846,7 +2044,7 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000061"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -889,7 +2087,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001415">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">morbidity</rdfs:label>
     </owl:Class>
     
@@ -898,7 +2096,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <obo:IAO_0000118 xml:lang="en">population size</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sample size</obo:IAO_0000118>
         <terms:description xml:lang="en">Statistical sample size is a count evaluating the number of individual experimental units.</terms:description>
@@ -910,7 +2108,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">The probability that a test will produce a true negative result when used on non-effected subjects as compared to a reference or &quot;gold standard&quot;. The specificity of a test can be determined by calculating: number of true negative results divided by the sum of true negative results plus number of false positive results.</terms:description>
         <rdfs:label xml:lang="en">diagnostic specificity</rdfs:label>
     </owl:Class>
@@ -920,7 +2118,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000182">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -953,7 +2151,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000233 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000233">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Ability to identify every single case of disease.</terms:description>
         <rdfs:label xml:lang="en">sensitivity</rdfs:label>
     </owl:Class>
@@ -963,7 +2161,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -987,7 +2185,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000412 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000412">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Ratio formed by the total number of all individuals who have an attribute or disease at a particular time or during a particular period divided by the populations at risk of having the attribute or disease at this point of time or midway through the period.</terms:description>
         <rdfs:label xml:lang="en">prevalence</rdfs:label>
     </owl:Class>
@@ -997,7 +2195,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000414 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000414">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">mortality rate</rdfs:label>
     </owl:Class>
     
@@ -1006,7 +2204,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000424 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000424">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">risk difference</rdfs:label>
     </owl:Class>
     
@@ -1033,7 +2231,7 @@
     <!-- http://purl.obolibrary.org/obo/VIDO_0001331 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIDO_0001331">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Numerical expression of the quantity of virus in a given volume of fluid.</terms:description>
         <rdfs:label xml:lang="en">viral load</rdfs:label>
     </owl:Class>
@@ -1043,1207 +2241,9 @@
     <!-- http://purl.obolibrary.org/obo/VO_0000247 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000247">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <terms:description xml:lang="en">Percentage reduction in disease incidence attributable to vaccination.</terms:description>
         <rdfs:label xml:lang="en">vaccine efficacy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#attack_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#attack_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Number of new cases of a specified disease during a specified time interval per 100 populations at risk during the same time interval.</terms:description>
-        <rdfs:label xml:lang="en">attack rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_daily_number_of_new_infections_generated_per_case_rt">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">average daily number of new infections generated per case (rt)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#average_rate_of_infectious_contacts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">average rate of infectious contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#case_fatality_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description xml:lang="en">Represents the killing power of a disease, as the ratio of deaths to cases. The time interval is not specified. Not to be confused with mortality rate.</terms:description>
-        <rdfs:label xml:lang="en">case fatality rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cases_by_exposure_in_a_healthcare_setting -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cases_by_exposure_in_a_healthcare_setting">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">cases by exposure in a healthcare setting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cluster_size -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cluster_size">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Number of cases of a disease or another health-related condition, closely grouped in time and place.</terms:description>
-        <rdfs:label xml:lang="en">cluster size</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#complication_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#complication_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Proportion of confirmed cases that suffered complications.</terms:description>
-        <rdfs:label xml:lang="en">complication rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#critical_vaccination_coverage">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Vaccination effort needed to eliminate an infection from a population.</terms:description>
-        <rdfs:label xml:lang="en">critical vaccination coverage</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_case_rates">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">cumulative case rates</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">cumulative cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_death_rates">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">cumulative death rates</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#cumulative_excess_mortality">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">cumulative excess mortality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#daily_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#daily_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">daily cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#daily_deaths -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#daily_deaths">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">daily deaths</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#descriptive_epidemiology">
-        <rdfs:label xml:lang="en">DEPRECATED descriptive epidemiology</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#device-specific_rates_and_procedure-specific_rates">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The risk of infection is related to the extrinsic risk factors (use of devices such as ventilator, central line intravascular catheter, urinary catheter, surgical operation).</terms:description>
-        <rdfs:label xml:lang="en">device-specific rates and procedure-specific rates</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#distribution -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#distribution">
-        <rdfs:label xml:lang="en">DEPRECATED distribution</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#duration_of_infection">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">duration of infection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#effective_reproduction_number">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Not all contacts will become infected and the average number of secondary cases per infectious case will be lower than the basic reproduction number. The effective reproductive number (R) is the average number of secondary cases per infectious case in a population made up of both susceptible and non-susceptible hosts.</terms:description>
-        <rdfs:label xml:lang="en">effective reproduction number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#environmental_risk_factor -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#environmental_risk_factor">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
-        <rdfs:label xml:lang="en">environmental risk factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#epidemic_doubling_time -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#epidemic_doubling_time">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Time for a given quantity to double in size or number at a constant growth rate.</terms:description>
-        <rdfs:label xml:lang="en">epidemic doubling time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#epidemiological_core_concepts">
-        <rdfs:label xml:lang="en">DEPRECATED epidemiological core concepts</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#etiology -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#etiology">
-        <rdfs:label xml:lang="en">DEPRECATED etiology</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposed_contacts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">exposed contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#exposed_individuals -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposed_individuals">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">exposed individuals</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#exposition_interval -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposition_interval">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">exposition interval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#exposure -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#exposure">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">exposure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#generation_interval -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#generation_interval">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The time lag from a primary infection to a secondary infection caused by the primary infection.</terms:description>
-        <rdfs:label xml:lang="en">generation interval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#growth_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#growth_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">growth rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#other_indicators"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_systems_indicators"/>
-        <rdfs:label xml:lang="en">health status indicators</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#health_systems_indicators -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#health_systems_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#other_indicators"/>
-        <rdfs:label xml:lang="en">health systems indicators</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#herd_immunity_threshold -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#herd_immunity_threshold">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The proportion of a population that need to be immune in order for an infectious disease to become stable in that community.</terms:description>
-        <rdfs:label xml:lang="en">herd immunity threshold</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_nosocomial_infection_rate_per_100_admissions">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">A hospital-wide nosocomial infection rate/100 admissions for a given period (month, quarter, or year) is commonly calculated. In this rate, a patient who has two infections is actually counted twice.</terms:description>
-        <rdfs:label xml:lang="en">hospital-wide nosocomial infection rate per 100 admissions</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospital-wide_patient_infection_rate_per_100_admissions">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Hospital-wide patient infection rate/100 admissions are used to avoid the pitfall of multiple infections in the same patient. This rate may be calculated for a given period: month, quarter, and year. In this rate, a patient with two infections is counted only once.</terms:description>
-        <rdfs:label xml:lang="en">hospital-wide patient infection rate per 100 admissions</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#hospitalization_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#hospitalization_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Proportion of confirmed cases that were hospitalized.</terms:description>
-        <rdfs:label xml:lang="en">hospitalization rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#host_risk_factor -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#host_risk_factor">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#risk_factor"/>
-        <rdfs:label xml:lang="en">host risk factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#incidence_of_sever_outcomes">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">incidence of sever outcomes</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <obo:IAO_0000118 xml:lang="en">case</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">infected person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_antigen_capture_tes -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_antigen_capture_tes">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">infected person diagnosed by antigen capture test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_serology -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_diagnosed_by_serology">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">infected person diagnosed by serology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infected_person_disgnosed_by_PCR -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infected_person_disgnosed_by_PCR">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">infected person diagnosed by PCR</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infection_fatality_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Represents the proportion of deaths among all infected individuals, including all asymptomatic and undiagnosed subjects.</terms:description>
-        <rdfs:label xml:lang="en">infection fatality rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#infectious_process -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#infectious_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">infectious process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_exposed_case">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">initial exposed case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#initial_infection_case">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">initial infection case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#interpretation -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#interpretation">
-        <rdfs:label xml:lang="en">DEPRECATED interpretation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#length_of_intensive_care_unit_stay">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">length of icu stay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#line_of_infection -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#line_of_infection">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_1110060"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#infectious_process"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000118 xml:lang="en">timecourse of infection</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">timeline of infection</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">infection course</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#male-to-female_ratio -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#male-to-female_ratio">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Male-to-female ratio of confirmed case-patients</terms:description>
-        <rdfs:label xml:lang="en">male-to-female ratio</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">median age of cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases_died -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases_died">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">median age of cases died</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases_hospitalized -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#median_age_of_cases_hospitalized">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">median age of cases hospitalized</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_case_rates">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">new daily case rates</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">new daily cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#new_daily_death_rates">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">new daily death rates</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#non-pharmaceutical_interventions">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">non-pharmaceutical interventions</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_active_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_active_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of active cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_by_testing">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases by testing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_currently_in_hospital -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_currently_in_hospital">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases currently in hospital</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_currently_in_icu -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_currently_in_icu">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases currently in icu</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_international_travel -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_international_travel">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases exposed by international travel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_one_or_cluster_case -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_one_or_cluster_case">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases exposed by local (one or cluster) case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_unknown_exposure -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_exposed_by_local_unknown_exposure">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases exposed by local unknown exposure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_hospitalized_this_week -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_hospitalized_this_week">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases hospitalized this week</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_removed_from_isolation_this_week -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_removed_from_isolation_this_week">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases removed from isolation this week</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_exposure_events">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases with exposure events</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_mild_symptoms -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_mild_symptoms">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases with mild symptoms</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_missing_exposure_information -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_missing_exposure_information">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases with missing exposure information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_no_symptoms -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_no_symptoms">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases with no symptoms</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_cases_with_school_exposure_events">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of cases with school exposure events</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_deaths_new_this_week -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_deaths_new_this_week">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of deaths new this week</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_schools_with_exposure_events">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of schools with exposure events</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tested_specimens">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of tested specimens</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#number_of_tests -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#number_of_tests">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">number of tests</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#odds_ratio_for_being_an_infected_contact -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#odds_ratio_for_being_an_infected_contact">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">odds ratio for being an infected contact</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#onset_of_symptom_to_hospitalization -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#onset_of_symptom_to_hospitalization">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">onset of symptom to hospitalization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#opportunity -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#opportunity">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Number of daily contacts the infected person has; average number of opportunities a person has to spread the infection each day the person is infectious.</terms:description>
-        <rdfs:label xml:lang="en">opportunity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#other_indicators -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#other_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">other indicators</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#patient -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#patient">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">patient</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#per_capita_mobility">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">per capita mobility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_daily_change">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Indicates epidemic growth rate as the median percent change in daily numbers of new cases.</terms:description>
-        <rdfs:label xml:lang="en">percent daily change</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percent_increase_in_mortality">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percent increase in mortality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_died -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_died">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage cases died</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_female_sex -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_female_sex">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage cases female sex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_removed -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_cases_removed">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage cases removed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_of_asymptomatic_of_confirmed_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_asymptomatic_of_confirmed_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage of asymptomatic of confirmed cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage of cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_icu -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_icu">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage of cases icu</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_cases_which_are_detected">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage of cases which are detected</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#percentage_of_laboratory_findings">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">percentage of laboratory findings</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#period_from_infectious_to_confirmed">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">period from infectious to confirmed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#points_of_interest -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#points_of_interest">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Number of points of interets within a geographical area.</terms:description>
-        <rdfs:label xml:lang="en">points of interest (pois)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#positive_contacts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#positive_contacts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">positive contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#predictive_value_positive">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The proportion of reported cases that actually have the health-related event under surveillance.</terms:description>
-        <rdfs:label xml:lang="en">predictive value positive (pvp)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#prevalence_of_comorbidities_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#prevalence_of_comorbidities_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">prevalence of comorbidities cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#prevalence_of_sars-cov-2_seropositivity -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#prevalence_of_sars-cov-2_seropositivity">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">prevalence of sars-cov-2 seropositivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#proportion_of_cases_attributed_to_travel">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">proportion of cases attributed to travel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#protection_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#protection_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">protection rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">quality of infection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection_process -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_infection_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">quality of infection process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quality_of_person -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quality_of_person">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">quality of person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">quantitative quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quantity_infected_population -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quantity_infected_population">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Quantity of members of a population that have an infection.</terms:description>
-        <rdfs:label xml:lang="en">quantity of infected population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#quarantined_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#quarantined_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Confirmed and infected cases under quarantine.</terms:description>
-        <rdfs:label xml:lang="en">quarantined cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_cases_by_testing">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Percent of positive specimens.</terms:description>
-        <rdfs:label xml:lang="en">rate cases by testing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#rate_of_cases_with_at_least_one_comorbidity -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_cases_with_at_least_one_comorbidity">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">rate of cases with at least one comorbidity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#rate_of_community_transmission -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_community_transmission">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">rate of community transmission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#rate_of_infectious_contacts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">rate of infectious contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#recovered_person -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#recovered_person">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">recovered person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#relative_change_in_new_infections">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">relative change in new infections</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#reproductive_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">Average number of cases that will result from an index case.</terms:description>
-        <rdfs:label xml:lang="en">reproductive rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#risk_factor -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#risk_factor">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:label xml:lang="en">risk factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#risk_factors_indicators -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#risk_factors_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#service_coverage_indicators"/>
-        <rdfs:label xml:lang="en">risk factors indicators</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#secondary_attack_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description xml:lang="en">Number of exposed persons developing the disease within the range of incubation period following exposure to a primary case.</terms:description>
-        <rdfs:label xml:lang="en">secondary attack rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#serial_interval -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#serial_interval">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <terms:description xml:lang="en">The time interval between symptom onset in a primary case and a secondary case, which is considered a reasonable approximation of the generation interval and is more practical to observe</terms:description>
-        <rdfs:label xml:lang="en">serial interval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#service_coverage_indicators -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#service_coverage_indicators">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#health_status_indicators"/>
-        <rdfs:label xml:lang="en">service coverage indicators</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#susceptible_individuals -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_individuals">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">susceptible individuals</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#susceptible_person -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#susceptible_person">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">susceptible person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#suspected_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#suspected_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">suspected cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#testing_rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#testing_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">testing rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#total_number_of_cases_ever_hospitalized -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#total_number_of_cases_ever_hospitalized">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">total number of cases ever hospitalized</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#total_number_of_cases_removed_from_isolation -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#total_number_of_cases_removed_from_isolation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">total number of cases removed from isolation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#undetected_cases -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#undetected_cases">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">undetected cases</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#untraceable_contacts -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#untraceable_contacts">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">untraceable contacts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#virus_factor_disposition">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000118 xml:lang="en">virus factor</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">virus factor disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cemo.owl#weighted_prevalence">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
-        <rdfs:label xml:lang="en">weighted prevalence</rdfs:label>
     </owl:Class>
     
 
@@ -2251,7 +2251,7 @@
     <!-- http://purl.unep.org/sdg/SDGIO_00020030 -->
 
     <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00020030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">neonatal mortality rate</rdfs:label>
     </owl:Class>
     
@@ -2260,7 +2260,7 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0004804 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004804">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:label xml:lang="en">birth rate</rdfs:label>
     </owl:Class>
     
@@ -2395,7 +2395,7 @@
     <!-- http://www.orpha.net/ORDO/Orphanet_409966 -->
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_409966">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cemo.owl#quantitative_parameters"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEMO_0000126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
