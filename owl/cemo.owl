@@ -22,7 +22,7 @@
         <dc:creator rdf:resource="http://orcid.org/0000-0003-0169-8159"/>
         <terms:description xml:lang="en">The COVID-19 Epidemiology and Monitoring Ontology (CEMO) provides a model for describing, sharing and integrating of COVID-19 epidemiological data for outbreak monitoring and research. This ontology is under development and URIs may not be stable.</terms:description>
         <terms:issued>16-05-2021</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title xml:lang="en">COVID-19 Epidemiology and Monitoring Ontology</terms:title>
         <rdfs:comment xml:lang="en">This ontology is under development and URIs may not be stable.</rdfs:comment>
         <rdfs:label xml:lang="en">CEMO</rdfs:label>
